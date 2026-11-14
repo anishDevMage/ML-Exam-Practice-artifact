@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exam Practice</title><style>
+:root{--bg:#fbfbf8;--fg:#1d1d1f;--mut:#5f6368;--card:#ffffff;--line:#e2e2dc;--acc:#2f55c4;--acc2:#e8eefc;
+--sol:#f2f6ff;--hint:#fff7e2;--warn:#fff1f0;--warnb:#e8b4ae;--ok:#eef8f0;--okb:#a9d5b3;--code:#f4f4f1;--hl:#fff3bf;
+--l1:#e6f4ea;--l2:#e8eefc;--l3:#fde8e8;--l4:#efe6fb}
+@media (prefers-color-scheme:dark){:root{--bg:#151619;--fg:#e9e9e6;--mut:#a3a6ab;--card:#1d1f23;--line:#33363c;--acc:#8fb0ff;
+--acc2:#22304f;--sol:#1a2333;--hint:#2b2617;--warn:#2e1b1a;--warnb:#7a3c36;--ok:#18281c;--okb:#3d6b49;--code:#23252a;--hl:#3b3517;
+--l1:#1d3324;--l2:#22304f;--l3:#3d2222;--l4:#30264a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:24px 16px 80px}
+header.top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .in{max-width:860px;margin:0 auto;padding:8px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:14px}
+header.top a{color:var(--acc);text-decoration:none}
+header.top .sp{flex:1}
+button{font:inherit;font-size:13px;padding:4px 10px;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:6px;cursor:pointer}
+button:hover{border-color:var(--acc)}
+#progress{color:var(--mut)}
+h1{font-size:30px;line-height:1.2;margin:18px 0 6px}
+.sub{color:var(--mut);margin:0 0 6px}
+.day{display:inline-block;background:var(--acc2);color:var(--acc);border-radius:20px;padding:2px 12px;font-size:13px;font-weight:600;margin-bottom:8px}
+nav.toc{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 18px;margin:18px 0 8px}
+nav.toc ul{margin:4px 0 10px;padding-left:20px}.tocg{margin-top:6px}
+nav.toc a{color:var(--acc);text-decoration:none}
+nav.toc .cnt{color:var(--mut);font-size:13px}
+h2{font-size:22px;margin:40px 0 10px;padding-top:8px;border-top:2px solid var(--line)}
+h3{font-size:18px;margin:24px 0 6px}
+p{margin:8px 0}
+a{color:var(--acc)}
+table{border-collapse:collapse;margin:10px 0;font-size:15px;max-width:100%;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:4px 10px;text-align:center;white-space:nowrap}
+th{background:var(--code);font-weight:600}
+tr.hl td{background:var(--hl);font-weight:600}
+td.l,th.l{text-align:left}
+caption{caption-side:top;text-align:left;color:var(--mut);font-size:13px;padding-bottom:2px}
+table.mat{display:inline-table;border-left:2px solid var(--fg);border-right:2px solid var(--fg);border-radius:4px;margin:4px 6px;vertical-align:middle}
+table.mat td{border:none;padding:1px 8px;text-align:right}
+.mname{font-family:"Cambria Math","STIX Two Math",Georgia,serif;font-style:italic}
+.eq{font-family:"Cambria Math","STIX Two Math",Georgia,serif;font-size:17px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 14px;margin:8px 0;overflow-x:auto}
+.box{border-radius:10px;padding:10px 16px;margin:14px 0;border:1px solid var(--line);background:var(--card)}
+.box-t{font-weight:700;margin-bottom:4px}
+.box.formula{border-color:var(--acc);background:var(--acc2)}
+.box.warn{background:var(--warn);border-color:var(--warnb)}
+.box.ok{background:var(--ok);border-color:var(--okb)}
+.box.idea{background:var(--hint)}
+.codewrap{margin:10px 0}
+.code-t{font-size:13px;color:var(--mut);margin-bottom:2px}
+pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 12px;overflow-x:auto;font-size:13.5px;line-height:1.45;margin:0}
+code{font-family:Consolas,"Cascadia Mono",Menlo,monospace}
+p code,li code,td code,.q code{background:var(--code);padding:0 4px;border-radius:4px;font-size:.92em}
+pre code{padding:0!important;background:none!important;font-size:inherit!important}
+ol.steps{padding-left:22px}
+ol.steps li{margin:3px 0}
+.intro{color:var(--fg);margin:4px 0 12px}
+.prob{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:12px 0}
+.meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;margin-bottom:6px}
+.pid{font-weight:700;color:var(--acc)}
+.lvl{border-radius:20px;padding:0 9px;font-weight:600}
+.lvl.l1{background:var(--l1)}.lvl.l2{background:var(--l2)}.lvl.l3{background:var(--l3)}.lvl.l4{background:var(--l4)}
+.pts,.tag{color:var(--mut)}
+.donebox{margin-left:auto;color:var(--mut);cursor:pointer;user-select:none}
+details{margin-top:8px;border-radius:8px}
+details>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--acc);padding:2px 0}
+details.hint>div{background:var(--hint);padding:8px 12px;border-radius:8px;margin-top:4px}
+details.sol>div{background:var(--sol);padding:10px 14px;border-radius:8px;margin-top:4px;overflow-x:auto}
+.ans{margin-bottom:6px}
+.tree{font-family:Consolas,"Cascadia Mono",Menlo,monospace;font-size:13.5px;white-space:pre;line-height:1.5;background:var(--code);border-radius:8px;padding:10px 12px;overflow-x:auto;border:1px solid var(--line)}
+.muted{color:var(--mut)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.grid2{grid-template-columns:1fr}h1{font-size:25px}}
+@media print{header.top,button,.donebox,details,nav.toc{display:none!important}
+body{background:#fff;color:#000;font-size:13px}.prob{break-inside:avoid;border-color:#bbb}h2{break-after:avoid}}
+
+td.l{white-space:normal;text-align:left} .small{font-size:13px} .st{font-size:13px;border-radius:20px;padding:1px 10px;background:var(--code);color:var(--mut)}
+.st.ok{background:var(--l1);color:var(--fg);font-weight:600} table.idx{display:table;width:100%}
+</style></head><body data-page="index"><div class="wrap">
+<h1>ML Final: Exam Practice</h1>
+<p class="sub">AT82.03 Machine Learning. Built from the professor's notebooks and the 2023 final. Study window: until the morning of November 21.</p>
+<h2>How to use these pages</h2>
+<ol>
+<li><b>Read the lesson part first</b> (the idea, the formula card, the worked examples). Copy the formula card onto your cheat sheet draft in your own handwriting.</li>
+<li><b>Do the problems on paper</b>, with the calculator you'll bring to the exam. Write the formula with numbers plugged in; that line earns marks.</li>
+<li><b>Then open "Answer and solution"</b>. If your number differs, compare step by step to find the exact line that went wrong.</li>
+<li><b>Tick "done"</b>. Your ticks are saved in this browser, and each page shows your progress at the top.</li>
+<li>Exam-level problems carry the 2023 point values. Time yourself on those.</li>
+</ol>
+<p class="muted">To print a worksheet, print the page: solutions, hints and buttons are hidden automatically.</p>
+<h2>Topics, in study order</h2>
+<table class="idx"><thead><tr><th class="l">Topic</th><th>Plan day</th><th>Practice</th></tr></thead><tbody><tr><td class="l"><a href="00%20Before%20Decision%20Trees%20-%20Concepts.html">Before decision trees: concepts and math</a><div class="muted small">Gentle start: notation, gradient descent, regularization, closed form, logistic, softmax, Naive Bayes, KNN, SVM</div></td><td>Sun Nov 8 (first)</td><td><span class="st ok">20 problems</span></td></tr><tr><td class="l"><a href="01%20Decision%20Trees%20and%20Random%20Forests.html">Decision Trees and Random Forests</a><div class="muted small">Gini, splits, full trees, bootstrapping, OOB, voting, feature importance</div></td><td>Sun Nov 8</td><td><span class="st ok">91 problems</span></td></tr><tr><td class="l"><a href="02%20K-Means%20Clustering.html">K-Means Clustering</a><div class="muted small">Distances, assignment and update steps by hand, inertia, choosing k, when K-means fails</div></td><td>Mon Nov 9</td><td><span class="st ok">60 problems</span></td></tr><tr><td class="l"><a href="03%20Neural%20Network%20Shapes%20-%20FFN%20and%20CNN.html">Neural network shapes: feedforward and CNN</a><div class="muted small">nn.Linear, Conv2d output sizes, pooling, parameter counts, convolution by hand</div></td><td>Tue Nov 10</td><td><span class="st ok">87 problems</span></td></tr><tr><td class="l"><a href="04%20Recurrent%20Neural%20Networks.html">Recurrent neural networks</a><div class="muted small">Hidden states h1, h2, h3 by hand, shapes, LSTM ideas</div></td><td>Wed Nov 11</td><td><span class="st ok">54 problems</span></td></tr><tr><td class="l"><a href="05%20AdaBoost%20and%20Gradient%20Boosting.html">AdaBoost and gradient boosting</a><div class="muted small">Weighted error, alpha, weight updates, residuals, learning rate</div></td><td>Thu Nov 12</td><td><span class="st ok">57 problems</span></td></tr><tr><td class="l"><a href="06%20GMM%20and%20PCA.html">Gaussian mixtures and PCA</a><div class="muted small">E-step and M-step, shapes, covariance, eigenvectors, projection</div></td><td>Fri Nov 13</td><td><span class="st ok">53 problems</span></td></tr><tr><td class="l"><a href="07%20Part%202%20Coding%20Kit/Part%202%20Guide.html">Part 2 coding kit</a><div class="muted small">Messy practice datasets, task notebooks in the 2023 format, a tested solution template</div></td><td>Sat Nov 14 – Tue Nov 17</td><td><span class="st ok">Guide + 3 datasets</span></td></tr><tr><td class="l"><a href="08%20Mock%20Exam%201%20-%20Part%201.html">Mock exam 1: Part 1</a><div class="muted small">2023 format, 30 points, timer and solutions</div></td><td>Wed Nov 18</td><td><span class="st ok">18 problems</span></td></tr><tr><td class="l"><a href="08%20Mock%20Exam%202%20-%20Part%201.html">Mock exam 2: Part 1</a><div class="muted small">2023 format, 30 points</div></td><td>Wed Nov 18</td><td><span class="st ok">18 problems</span></td></tr><tr><td class="l"><a href="08%20Mock%20Exam%203%20-%20Part%201.html">Mock exam 3: Part 1</a><div class="muted small">2023 format, 30 points</div></td><td>Fri Nov 20 (short run)</td><td><span class="st ok">18 problems</span></td></tr><tr><td class="l"><a href="08%20Mock%20Exam%204%20-%20Part%201.html">Mock exam 4: Part 1 (wider coverage)</a><div class="muted small">AdaBoost, gradient boosting, PCA, CNN shapes, GMM</div></td><td>Thu Nov 19</td><td><span class="st ok">15 problems</span></td></tr><tr><td class="l"><a href="09%20First%20Half%20-%20Regression%20and%20Classifiers.html">First half: regression to SVM</a><div class="muted small">Gradient descent, regularization, closed form, logistic and softmax regression, Naive Bayes, KNN, SVM</div></td><td>Any time</td><td><span class="st ok">52 problems</span></td></tr><tr><td class="l"><a href="10%20PPO.html">Reinforcement learning: PPO</a><div class="muted small">Only if your class covered it: concepts and the clipped objective</div></td><td>Thu Nov 19, optional</td><td><span class="st ok">27 problems</span></td></tr><tr><td class="l"><a href="11%20Drill%20Lab.html">Drill Lab (online version is an artifact)</a><div class="muted small">Endless random hand-calculation drills with step checking: GD, Ridge, closed form, logistic, Gini, K-means, CNN, RNN</div></td><td>Daily, 10 minutes</td><td><span class="st ok">Unlimited problems</span></td></tr><tr><td class="l"><a href="12%20Code%20It%20Yourself/12%20Code%20It%20Yourself%20%28Workbook%29.ipynb">Code It Yourself: regression to logistic regression</a><div class="muted small">Write your own ML library with auto-checks: GD, mini-batch, Ridge/Lasso classes, k-fold, sklearn, logistic, confusion matrix, softmax</div></td><td>Wed Nov 11 – Fri Nov 13</td><td><span class="st ok">21 levels, auto-checked</span></td></tr></tbody></table>
+<h2>What the 2023 final looked like</h2>
+<p><b>Part 1, theory (30 points, closed book, calculator and cheat sheet):</b> 14 one-point short answers (Gini range, OOB, overfitting, feature importance,
+gradient boosting learning rate, K-means failure cases, GMM and PCA shapes, nn.Linear, CNN shapes and nn.Conv2d arguments, RNN hidden-state shape);
+a decision tree Gini question (7); random forest bootstrapping (2); two K-means iterations by hand (3); RNN hidden states h1, h2, h3 by hand (4).</p>
+<p><b>Part 2, coding (50 marks + 5 bonus, open book, no AI tools):</b> clean a messy dataset (missing values, string errors, outliers, units),
+balance classes, EDA, scaling from scratch, stratified split, two or more classifiers with a metrics table, 5-fold cross-validation, grid search,
+a confusion matrix from scratch, and feature importance.</p>
+</div></body></html>

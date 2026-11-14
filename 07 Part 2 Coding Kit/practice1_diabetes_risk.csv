@@ -1,0 +1,206 @@
+Gender,Height (cm),Weight (kg),Temperature (C),Age (years),Blood Pressure (mmHg),Cholesterol (mg/dL),Heart Rate (bpm),Blood Sugar (mg/dL),Exercise Time (min),Sleep Duration (hours),Target
+Male,178.4,74.8,36.2 C,56,109mmHg,215mg/dL,74,149mg/dL,6,4.6,1
+ Male,unknown,73.4 kg,37.1,42 years,123 mmHg,169 mg/dL,73 bpm,111,38,5.9 hours,0
+Female,156.6 cm,65.2,36.7,43,99 mmHg,110,74 bpm,71,33 min,7.2 hours,0
+Female ,161.4 cm,58.0 kg,36.9,19 years,124,196,92 bpm,122,55 min,7.3,0
+Female,161.3,NA,37.2 C,57,128,238,72bpm,abc,20min,5.5,0
+Male,188.2,38.7 kg,36.5,19,105mmHg,265,80,84 mg/dL,57,6.6,0
+Male,163.1,59.1,37.0C,55,134 mmHg,187mg/dL,66,109 mg/dL,22 min,6.4 hours,0
+Male,177.9cm,67.6,36.8 C,68,127,215 mg/dL,77bpm,107 mg/dL,28,5.4 hours,1
+Female,155.2cm,75.3 kg,36.4,22,103mmHg,142mg/dL,69,86 mg/dL,6min,6.9,0
+Female,17.2,62.2,36.6,27,109 mmHg,200,71,101,77min,7.2,0
+Male,178.0,73.8 kg,37.3,21,123 mmHg,164,86,94,26,8.3,0
+Female,148.0 cm,68.7 kg,36.7,47,130 mmHg,148 mg/dL,58 bpm,93,4,5.9,0
+Male,184.7,92.4kg,37.1C,22,106mmHg,162mg/dL,62 bpm,109 mg/dL,106 min,7.2,0
+Female,162.4 cm,78.4,36.9 C,20,123 mmHg,unknown,68bpm,114,77min,6.3,0
+Male,147.8 cm,87.1 kg,36.3 C,46,108 mmHg,160 mg/dL,73 bpm,114 mg/dL,1 min,6.7,1
+Male,165.9cm,,36.8 C,45 years,125mmHg,177 mg/dL,69bpm,115mg/dL,44min,7.1,0
+M,179.4,81.1kg,37.1C,32,120mmHg,,72,85,8,6.5,0
+Female,164.6 cm,73.6 kg,36.9 C,25,103mmHg,171,74,91 mg/dL,9,6.4 hours,0
+Male,180.6,75.0 kg,36.7C,34,120,169 mg/dL,74 bpm,126mg/dL,44 min,?,0
+F,143.6,51.6 kg,36.2C,37 years,103mmHg,178mg/dL,81,113 mg/dL,92,,0
+Male,172.3 cm,80.2,37.1,62,116,226,81,84mg/dL,2 min,6.7,0
+Female,168.1,unknown,36.5 C,40,123,200,59bpm,96,2,7.1 hours,0
+Female ,155.9 cm,57.4 kg,36.4 C,69,118mmHg,193,66,74 mg/dL,3 min,8.1 hours,0
+Female,164.0 cm,69.0,36.4,64,121 mmHg,183,78bpm,111 mg/dL,42min,6.7,1
+Female,154.1cm,84.7 kg,36.6 C,47,115,?,73bpm,68,10,6.6 hours,0
+Female,,75.6kg,36.9C,36 years,116mmHg,220mg/dL,93,124mg/dL,10min,6.3 hours,0
+Female,164.0,61.4,37.3,60,159mmHg,147mg/dL,64,90 mg/dL,,7.7,0
+Male,183.1,77.4kg,37.3C,50 years,113,,abc,129,2,,0
+Female,NA,66.2 kg,36.5 C,56,132mmHg,290,81,77 mg/dL,1,5.4 hours,0
+Male,170.5 cm,46.8,36.2,48,123,196mg/dL,65 bpm,125,unknown,6.2 hours,0
+Male,166.3,75.4 kg,36.7 C,19,116mmHg,149mg/dL,81 bpm,88 mg/dL,4,4.6 hours,0
+Female,154.3,,37.1,18,113mmHg,217,67 bpm,118mg/dL,9min,7.9,0
+Male,179.7cm,59.5,37.0,47,116,216mg/dL,69,85,0 min,5.8,0
+male,187.5cm,72.3kg,36.3,56 years,117,180mg/dL,75,72 mg/dL,7,7.4 hours,0
+Male,N/A,73.8,36.7C,50,122,211mg/dL,69,,33min,6.3,0
+Female,147.1,81.6kg,36.9,57,121,127mg/dL,69,##,23min,7.2,1
+Male,180.6,62.8kg,36.7,70 years,166mmHg,189 mg/dL,63 bpm,134mg/dL,47min,7.1,1
+Female,162.0cm,80.1,36.8C,-5,106 mmHg,,69,97,21,6.9,1
+Male,unknown,60.7kg,36.8,48,155,203 mg/dL,72 bpm,81mg/dL,41min,9.1,0
+ Male,164.1 cm,error,37.1 C,70 years,125 mmHg,241mg/dL,58 bpm,,40,7.4,1
+Female,165.4,60.4 kg,37.1 C,61,123,148 mg/dL,90,67mg/dL,35min,7.9,0
+Male,174.3 cm,84.7kg,36.9 C,50,127 mmHg,152,64bpm,131,66min,6.6,0
+F,165.6,51.3kg,36.8 C,47,98mmHg,197 mg/dL,70 bpm,104,16,7.0,0
+M,?,83.7,36.6,27,143mmHg,176mg/dL,70,111,28min,6.1,0
+female,156.5 cm,49.6,36.1 C,25 years,134mmHg,abc,83bpm,84,10,,0
+Female ,154.3 cm,36.8kg,36.8 C,59,146,160 mg/dL,68,110,36min,30 hours,0
+Female,157.1 cm,78.7kg,36.7,55,116,207 mg/dL,69,96mg/dL,19min,7.3,0
+Male,189.3 cm,83.5 kg,36.9C,35,96mmHg,177mg/dL,63,83mg/dL,10 min,4.8,0
+female,159.0,84.7kg,36.8,55,116,257mg/dL,75,71,29,6.7 hours,1
+Male,173.2 cm,41.3kg,37.0 C,61 years,147mmHg,166mg/dL,abc,950 mg/dL,7,6.8,0
+Female,159.6cm,63.8,36.6C,24 years,122mmHg,188mg/dL,64 bpm,102,14,8.2 hours,0
+Female,160.3 cm,60.9 kg,37.2 C,49 years,147,162 mg/dL,66 bpm,105,##,4.1,0
+Female ,158.9cm,54.2 kg,37.2 C,63 years,134mmHg,,66 bpm,104,68,5.8,0
+Male,183.1,77.4kg,37.3C,50 years,113,,abc,129,2,,0
+Male,168.9cm,76.2kg,36.9 C,38,101,190,75 bpm,77 mg/dL,27 min,5.8,0
+Male,170.8cm,71.5 kg,37.2,66 years,134mmHg,229,81,102,30,7.2,0
+Male,158.0cm,114.8kg,36.6,23,147mmHg,173 mg/dL,65 bpm,93 mg/dL,55 min,8.7,0
+Female,163.8,55.9kg,36.8C,70,142 mmHg,182mg/dL,64,129 mg/dL,2min,7.3,1
+Female,,75.6kg,36.9C,36 years,116mmHg,220mg/dL,93,124mg/dL,10min,6.3 hours,0
+Female,151.1,61.8kg,37.1C,33,123,179mg/dL,84bpm,131mg/dL,11,8.3,0
+Male,178.5 cm,79.7kg,37.3,57 years,131mmHg,244 mg/dL,abc,77,14min,7.0,0
+Female,169.3 cm,66.4,36.5 C,52 years,108 mmHg,121 mg/dL,76,97,34 min,8.5,0
+Female,155.2cm,60.7 kg,36.6 C,38 years,124,184mg/dL,78 bpm,106,7,6.8,0
+Female,159.6,61.6kg,37.6,26,132,190mg/dL,75,79 mg/dL,198 min,7.0,0
+Male,166.6 cm,76.4 kg,36.1 C,61,143mmHg,,310 bpm,65 mg/dL,36 min,7.2,0
+Male,174.3,77.3,37.0C,62,115 mmHg,220mg/dL,83 bpm,94,47 min,8.0,0
+Female,168.5cm,64.0kg,36.8C,35 years,132 mmHg,196,80,96mg/dL,1min,7.2 hours,0
+Male,167.4 cm,96.7,36.7,22,114 mmHg,173,88bpm,119 mg/dL,62 min,5.7 hours,0
+ Male,180.7 cm,75.6 kg,36.3,63,163,163mg/dL,64 bpm,120,31min,6.1 hours,1
+Female,169.9cm,73.3kg,37.3 C,26,108,243mg/dL,84 bpm,100,18,7.6,0
+Male,171.0 cm,690 kg,36.9C,37,111,166,73,99,28min,6.2,0
+Female,157.1 cm,62.3kg,36.9 C,70,136 mmHg,224 mg/dL,88 bpm,119mg/dL,93 min,6.4 hours,0
+Female,169.0cm,69.2,36.5C,22,129,193 mg/dL,79bpm,127mg/dL,29,6.8 hours,0
+ Male,159.7cm,92.8kg,36.9 C,35,127,182 mg/dL,72,84 mg/dL,0,9.7 hours,1
+Male,168.9,69.0,37.1C,56 years,126 mmHg,190mg/dL,78,142,67,7.7 hours,1
+Male,184.3,77.7 kg,36.9,67 years,149,206mg/dL,75,NA,27min,6.5 hours,0
+Male,176.6cm,86.9kg,36.0C,24,76,193,80 bpm,108,,7.1 hours,0
+Female,159.8,78.1,36.5,19 years,127 mmHg,228,81,75mg/dL,21min,7.0 hours,0
+Male,174.6,63.9,36.6C,54 years,129mmHg,189,96,121,21,7.6,1
+Female,153.2cm,69.2 kg,36.3C,23,111 mmHg,150,67,116,9,,1
+Male,166.6cm,83.7,37.3 C,47,131,179,72,?,10,6.8 hours,1
+Female,159.4,73.4,36.2C,46,86mmHg,217 mg/dL,54,105 mg/dL,29,##,0
+Female,168.8,46.8,36.2,37 years,119,204,77,90 mg/dL,14,7.0 hours,0
+Male,159.4cm,55.7,36.8 C,22 years,107mmHg,163mg/dL,90,NA,26 min,8.7,0
+Male,177.3 cm,76.1 kg,36.8C,64 years,148 mmHg,211 mg/dL,86,101,18,8.0,0
+Male,174.5,70.7,36.9 C,39,115mmHg,177 mg/dL,66 bpm,86,5 min,7.0,0
+Female,172.1,60.4,37.1C,54 years,120 mmHg,215mg/dL,67bpm,83 mg/dL,35min,6.9,0
+Female,162.5 cm,57.1kg,37.1 C,25,127 mmHg,110mg/dL,72 bpm,137,76,6.4,0
+Female,157.4,49.3,37.0,69,130mmHg,178 mg/dL,74,72 mg/dL,7,7.8 hours,0
+Male,163.6,61.3kg,37.0,49 years,114 mmHg,167 mg/dL,79,112 mg/dL,3 min,6.8,1
+female,153.5,55.8,36.6,41,110,103mg/dL,68,102 mg/dL,28,4.9,0
+Male,184.9,78.8,36.8C,61,128,167,76,94mg/dL,8 min,6.4,1
+Female,167.4,48.2 kg,36.7C,64 years,120mmHg,230mg/dL,65 bpm,107mg/dL,12min,8.4,1
+Female,,78.6 kg,37.3,46,147mmHg,167,86bpm,134 mg/dL,20,6.8 hours,1
+Male,160.3 cm,100.7,37.3,60,130,148 mg/dL,66 bpm,103mg/dL,,8.9 hours,1
+Male,179.3 cm,66.7 kg,36.2,29,115mmHg,215 mg/dL,77,119mg/dL,7 min,7.1 hours,0
+Female,161.8cm,70.9,37.0,36,93mmHg,189,66 bpm,94 mg/dL,,5.8 hours,0
+Male,161.2cm,79.5,37.0 C,21 years,123,192,82bpm,93,7,NA,0
+Male,167.4,,36.7,54,105 mmHg,155,99 bpm,102,37,6.1 hours,0
+Female,160.0,61.8 kg,36.9 C,32,101,146,55,95 mg/dL,47,5.2 hours,0
+Female,171.1cm,70.8,36.8,43 years,114 mmHg,162 mg/dL,84,94,8 min,6.9 hours,0
+Female,154.8 cm,58.2kg,36.1,50,143mmHg,141,61 bpm,103 mg/dL,16,4.8 hours,0
+Female,155.4,59.4kg,36.8,25 years,115,220,76bpm,100mg/dL,74,8.8 hours,0
+Male,169.3,72.7,36.7,50,113 mmHg,125,87bpm,72 mg/dL,1min,5.7,0
+Female,166.9,73.4kg,37.1,25,120,195 mg/dL,77 bpm,59,2,5.6 hours,0
+Male,?,69.2,37.0,56,134 mmHg,138mg/dL,86,1200,13,5.4,0
+Female,162.7 cm,55.4,37.7,57 years,131,200 mg/dL,88,126mg/dL,24 min,7.5 hours,1
+Female,162.6 cm,75.6kg,36.6 C,68,125mmHg,150mg/dL,74,114 mg/dL,90min,7.0 hours,0
+Male,179.7cm,54.1kg,36.7 C,56,131,180 mg/dL,67,83mg/dL,15 min,8.2,0
+Female,163.6cm,31.5,36.9,54,133,217,64,107,12 min,7.4,0
+Female,156.0 cm,52.8kg,37.0C,23,118,211mg/dL,76bpm,143mg/dL,0min,6.5,0
+Male,161.6 cm,63.9kg,37.0 C,31,129mmHg,206 mg/dL,68bpm,86mg/dL,14 min,7.2 hours,0
+Female,170.9cm,70.3kg,36.4,37,143mmHg,214mg/dL,69,119mg/dL,28 min,7.8,1
+Male,170.7 cm,60.1,36.6 C,52,121mmHg,153 mg/dL,59 bpm,136mg/dL,3 min,5.7 hours,1
+Male,177.9,87.7 kg,35.9,57,132,225mg/dL,71,145 mg/dL,4,6.9,1
+Female,160.9 cm,74.0,36.7,33,132,199,75,91 mg/dL,8,6.9,0
+Female,162.9cm,NA,37.1,44,111,217mg/dL,55,113mg/dL,137min,6.0,0
+Male,179.9 cm,71.0kg,36.4 C,53,130mmHg,229mg/dL,80bpm,155mg/dL,161,7.0,0
+Female,149.9cm,65.4kg,36.5,68,133mmHg,224,51,117 mg/dL,4 min,8.7 hours,1
+Male,,59.8,36.6,60 years,121mmHg,170mg/dL,72 bpm,105mg/dL,2 min,6.8,0
+Male,176.5cm,66.5 kg,36.4,57 years,127 mmHg,245,85bpm,,9,6.8,0
+Male,173.3 cm,72.7kg,37.0 C,42,142mmHg,171 mg/dL,82 bpm,128 mg/dL,41,5.1 hours,0
+Male,177.4,83.3kg,36.6 C,54,132mmHg,214,68,57mg/dL,8 min,8.5,0
+M,184.8 cm,86.1,36.7,29,120mmHg,157,83,96,33min,7.5,0
+Male,169.7,76.4 kg,36.9C,46,136mmHg,213mg/dL,59bpm,86mg/dL,96,8.0 hours,0
+Female,165.1 cm,64.3,36.6,60,128mmHg,223 mg/dL,87bpm,121,31 min,7.6 hours,1
+Female,150.4 cm,72.4,36.9C,51,123mmHg,219mg/dL,86bpm,80 mg/dL,57,5.9 hours,0
+Male,180.9cm,80.6,36.7,39 years,102 mmHg,157 mg/dL,64,96mg/dL,7min,6.7,0
+Male,164.7 cm,74.3 kg,36.6,64,116,235mg/dL,75 bpm,86 mg/dL,52 min,7.4,0
+Male,183.8,88.6,36.3 C,49,171,207,53bpm,85mg/dL,17 min,,0
+Male,175.2cm,87.0,36.9 C,45,121mmHg,187,79bpm,98,17 min,7.3,0
+M,175.2cm,83.8 kg,36.2,68,135,135mg/dL,78bpm,90,119,7.8,0
+Female,171.1,71.2 kg,36.1,33,118,145 mg/dL,62,98mg/dL,1,8.4,0
+Female,154.7cm,80.1kg,37.2,57,112,140mg/dL,79,94,27 min,8.2 hours,1
+Male,184.6,70.6,36.4 C,70,140mmHg,191 mg/dL,80,86,125 min,7.7,0
+Male,173.5,77.8kg,36.6C,18 years,101mmHg,222,83,138,14 min,7.0,1
+Female,173.1cm,41.8kg,36.7 C,26,98 mmHg,201mg/dL,88 bpm,81,25min,6.4 hours,0
+Female,,53.7,36.7 C,32,106mmHg,219 mg/dL,76bpm,72mg/dL,41min,6.7 hours,0
+Male,163.9cm,82.5kg,36.4C,66,145,202,73 bpm,109mg/dL,8,6.7,1
+Male,170.2,77.3 kg,37.3C,26,133,134 mg/dL,58 bpm,86 mg/dL,14min,5.3,0
+Male,182.0,100.5,36.8,50,145,201 mg/dL,69,117mg/dL,21 min,7.3,0
+Female,157.4 cm,59.3 kg,36.1 C,35,127 mmHg,185mg/dL,77,83,16 min,7.4 hours,0
+Female,157.7cm,55.1 kg,37.0,38,137,214mg/dL,70,79,21min,6.5,0
+Female,1724 cm,64.7,37.1,69 years,140,187,91,123mg/dL,13,6.8 hours,1
+Male,175.5cm,59.8 kg,37.0,42,114,156mg/dL,80bpm,106mg/dL,6min,5.3 hours,0
+Female ,172.5cm,60.9 kg,36.8C,53,90 mmHg,165,unknown,N/A,52 min,7.9 hours,0
+Female,149.7 cm,65.2kg,36.6 C,55,84,174mg/dL,71,116 mg/dL,48,5.8,1
+Female,161.9 cm,44.4kg,36.6 C,230,147,191mg/dL,89 bpm,84,3,6.6,0
+Male,169.4cm,90.6,35.9,38,111,,74bpm,104mg/dL,182 min,8.2 hours,0
+Male,175.3,53.5,36.5C,70,115 mmHg,209mg/dL,65,124 mg/dL,31 min,7.9,1
+ Male,175.9cm,67.5kg,36.9,62 years,132,187 mg/dL,89,106,24min,7.2,0
+Female,165.3cm,76.7kg,36.7 C,29 years,122mmHg,160,58,121,36,6.3 hours,1
+Female,161.0 cm,57.3 kg,37.1,61,134,178mg/dL,76 bpm,93mg/dL,NA,7.9,1
+Male,180.6,75.0 kg,36.7C,34,120,169 mg/dL,74 bpm,126mg/dL,44 min,?,0
+Male,176.0,79.6kg,36.5,57 years,129,178mg/dL,72,89 mg/dL,-30 min,7.4,1
+Male,179.9,68.5 kg,37.0C,34,122,224,78bpm,NA,155 min,7.2 hours,0
+Male,172.0,98.1kg,36.5C,39,142mmHg,211 mg/dL,80 bpm,129,22 min,5.7,1
+Female,170.6cm,68.7kg,37.0 C,52,130mmHg,173,67 bpm,102 mg/dL,4,7.6,0
+Female,156.5,78.7kg,37.1,25 years,128,167 mg/dL,60,103 mg/dL,8,6.5,1
+Female,167.2 cm,67.9kg,37.3C,67,140mmHg,178mg/dL,66bpm,95,23min,6.4 hours,0
+Female,155.9,56.4 kg,36.9 C,62 years,130,205mg/dL,91bpm,115mg/dL,21min,7.9,0
+Female,157.4cm,60.4 kg,36.7C,59 years,110,181 mg/dL,84,88 mg/dL,51min,8.3,0
+Male,172.1,78.2kg,36.9 C,54,122 mmHg,233 mg/dL,97,77 mg/dL,,7.4,0
+Male,176.6 cm,73.8,36.3 C,38,97mmHg,184,69 bpm,75,6,8.3,1
+ Male,179.3cm,88.0kg,37.2,51,105 mmHg,203 mg/dL,78 bpm,119mg/dL,23,5.9,1
+ Male,174.8,,37.3C,63,156 mmHg,197,69bpm,68mg/dL,86 min,5.6,0
+M,184.0,72.6,36.8,51,121,162,61bpm,93mg/dL,15,error,0
+Female,169.9,58.8 kg,36.3 C,26,105,159,85bpm,62,5,7.2,0
+F,169.3,66.3,36.7 C,38,121,214 mg/dL,69bpm,79mg/dL,35min,7.1,0
+Female,169.8 cm,67.5 kg,37.3 C,23,142,143mg/dL,47,62 mg/dL,43 min,6.4,0
+Male,175.8,62.7 kg,36.9 C,63 years,132mmHg,169,85,98,188min,7.5 hours,0
+Male,166.3,86.6kg,36.7,48,142,257 mg/dL,76,102mg/dL,?,5.8 hours,1
+Female,152.5cm,60.5,36.7C,35,124,141,69,119 mg/dL,10min,5.7,0
+Male,185.4 cm,73.8kg,36.6 C,37 years,111,205,68bpm,93,5,6.3,0
+Female,163.2cm,54.7kg,37.0C,59 years,129 mmHg,,71bpm,127 mg/dL,54 min,6.9 hours,0
+Male,178.9 cm,59.4,37.0,68,136mmHg,207,57,111,53,8.2 hours,0
+Male,175.3,53.5,36.5C,70,115 mmHg,209mg/dL,65,124 mg/dL,31 min,7.9,1
+Male,180.6cm,52.7,37.2C,27,107mmHg,221mg/dL,87,66,4,7.3 hours,0
+Male,186.5cm,76.3kg,36.8 C,27,103 mmHg,151,70bpm,80 mg/dL,11min,6.0,0
+Male,174.8,,37.1C,34 years,134,155,79bpm,115,47 min,,0
+Male,166.7 cm,93.7kg,37.0,52,124 mmHg,151mg/dL,76,106,15 min,9.8,0
+Female,147.2 cm,52.3,36.8,49,143,163,84bpm,113,1,7.3 hours,0
+Male,167.8,90.3 kg,37.0,67,146mmHg,154mg/dL,62,93 mg/dL,13min,7.4 hours,1
+Female,156.9 cm,52.3kg,37.2,56 years,108 mmHg,188 mg/dL,59 bpm,115 mg/dL,32 min,7.5,0
+Female,169.9cm,73.3kg,37.3 C,26,108,243mg/dL,84 bpm,100,18,7.6,0
+Male,166.1,82.5,36.4,33,103mmHg,204,89 bpm,129 mg/dL,2min,7.8,1
+Male,163.2cm,84.5 kg,36.4 C,22,116,242,73,77,32,7.6 hours,0
+Male,174.2 cm,72.7,36.2 C,67 years,118,178 mg/dL,69bpm,109,7min,7.9,1
+Male,194.4,81.9 kg,36.8C,36 years,124,246,73,104mg/dL,15,6.3,0
+Male,174.7 cm,67.9 kg,37.3,21 years,112mmHg,149 mg/dL,72,98mg/dL,43,7.7,0
+Female,178.8,63.3kg,36.5C,42 years,108 mmHg,224,58,80mg/dL,136,5.8 hours,0
+Male,188.7,79.1kg,36.9,59,125mmHg,215,69,97,10,5.7 hours,0
+Male,175.1 cm,56.1kg,37.0,33,122mmHg,202,71bpm,121mg/dL,8 min,6.6,0
+Male,181.5,71.5kg,36.7 C,53,115 mmHg,174,77,89,27 min,7.4,0
+Female,157.4cm,59.9,37.1C,70,140 mmHg,215,67 bpm,99 mg/dL,30,6.8,1
+Female,155.5 cm,79.2 kg,36.7C,64,125mmHg,217mg/dL,69 bpm,117,,7.1,1
+Female,160.5,36.0 kg,36.4,33,104 mmHg,158 mg/dL,51,115,38min,7.4,0
+Female,154.5,69.9kg,36.9,58,114,210mg/dL,80 bpm,129,76,5.5,0
+Male,181.8,78.8 kg,36.4,33,108,230,77,92mg/dL,39,6.2 hours,0
+Male,163.8,85.8kg,37.0C,57,119 mmHg,138,67bpm,110 mg/dL,94min,8.4 hours,0
+Female,152.2 cm,70.1 kg,37.1 C,54,120mmHg,224mg/dL,76 bpm,49,21min,8.0 hours,0
+Female,173.1,51.8 kg,36.8C,18,121,167,63,102,41 min,7.2,0
+Female,166.2cm,68.2,36.7 C,64 years,138mmHg,173 mg/dL,80,103 mg/dL,2min,6.5,0
+Female,154.3 cm,75.2 kg,36.4,37 years,118,210mg/dL,60,113,25 min,6.2,0
+F,152.7,43.5,36.9,33,114mmHg,219mg/dL,86bpm,91,21min,6.4 hours,0

@@ -1,0 +1,255 @@
+Age,Sex,Chest Pain Type,Resting BP,Cholesterol,Max Heart Rate,Oldpeak,BMI,Glucose,Smoker,Exercise (hrs/week),HeartDisease
+40,M,atypical angina,142,,174bpm,0.4,34.5,103 mg/dl,no,4.9 hrs,0
+63 yrs,M,non-anginal,135mmHg,185mg/dl,172,1.5,22.7kg/m2,163 mg/dl,no,5.0 hrs,0
+76,M,asymptomatic,134mmHg,211,157,0.3,21.2 kg/m2,115 mg/dl,no,2.6 hrs,0
+53 yrs,M,asymptomatic,114 mmHg,278,171,0.6,28.8 kg/m2,61,no,1.0 hrs,0
+75,F,non-anginal,143 mmHg,194 mg/dl,152,0.1,31.9,69,yes,3.8,0
+63,F,asymptomatic,158,283mg/dl,168,0.3,30.1,89mg/dl,no,2.5,0
+40,F,typical angina,148,N/A,188bpm,0.9,25.0,,no,4.4 hrs,0
+40,M,asymptomatic,95,242mg/dl,188 bpm,5.0,30.5,104mg/dl,no,6.7 hrs,1
+30,M,atypical angina,160mmHg,263,179bpm,0.6,27.1kg/m2,82mg/dl,yes,0.4 hrs,0
+45,M,asymptomatic,128,211 mg/dl,174bpm,1.5,31.4kg/m2,85,no,1.7 hrs,0
+40,M,atypical angina,133,263,177bpm,1.0,N/A,NA,yes,3.0 hrs,0
+75,F,typical angina,131 mmHg,251mg/dl,138,1.1,24.3 kg/m2,110,no,1.9 hrs,1
+49,F,asymptomatic,99,186 mg/dl,171,0.9,28.9,95 mg/dl,no,1.0 hrs,0
+73,F,typical angina,154mmHg,142 mg/dl,150,0.7,22.0 kg/m2,126 mg/dl,yes,2.5 hrs,1
+76,M,asymptomatic,139,186,120,0.6,24.2,148 mg/dl,no,0.9 hrs,1
+64,Male,non-anginal,101,206,165,0.3,29.4kg/m2,125 mg/dl,no,3.7,1
+63,M,non-anginal,138 mmHg,205mg/dl,143bpm,0.0,25.0 kg/m2,94mg/dl,no,7.2,0
+29,m,asymptomatic,127mmHg,162,188,0.7,23.5,93,no,8.4,0
+73,F,asymptomatic,100,259mg/dl,137,0.2,20.8,99 mg/dl,no,1.2,1
+50,M,typical angina,126,249 mg/dl,195bpm,0.2,35.2,123mg/dl,no,1.2 hrs,0
+58 yrs,F,non-anginal,135,171mg/dl,176,0.9,30.3 kg/m2,86 mg/dl,no,0.6,0
+56,F,atypical angina,107,245mg/dl,163,0.1,25.8,135mg/dl,yes,2.2,0
+33,F,asymptomatic,,329 mg/dl,189bpm,0.1,21.1kg/m2,113,no,5.0 hrs,0
+71,M,atypical angina,124,228,141,0.3,32.8 kg/m2,89mg/dl,no,0.7,1
+69,F,asymptomatic,147,228,160,0.1,31.8,57mg/dl,N,3.0,0
+76,F,asymptomatic,150,178,136 bpm,1.5,29.8,94,yes,1.1 hrs,1
+40,Male,asymptomatic,174mmHg,171,191bpm,0.4,17.7 kg/m2,,no,2.6 hrs,0
+46,F,atypical angina,135,248mg/dl,159 bpm,0.3,29.2,81,no,3.4,0
+40,M,non-anginal,0,210 mg/dl,180bpm,0.7,32.9,132,yes,4.7,0
+35 yrs,F,asymptomatic,132 mmHg,252 mg/dl,179 bpm,0.3,28.7,92 mg/dl,no,3.1,0
+43,M,asymptomatic,134,236mg/dl,185bpm,1.0,27.7kg/m2,107mg/dl,no,2.9,0
+48,M,asymptomatic,92mmHg,286mg/dl,179,1.4,28.0kg/m2,106 mg/dl,yes,5.4 hrs,0
+999,M,typical angina,105mmHg,266 mg/dl,195 bpm,1.5,25.1,80mg/dl,yes,1.1 hrs,0
+57 yrs,M,typical angina,154,263 mg/dl,173bpm,0.2,31.3 kg/m2,76 mg/dl,no,4.0,0
+59,M,non-anginal,139 mmHg,212,182 bpm,0.7,25.2,73mg/dl,yes,0.7 hrs,0
+46,M,asymptomatic,151 mmHg,284mg/dl,150,3.1,22.3,107mg/dl,yes,1.9 hrs,1
+35,M,asymptomatic,146,255mg/dl,180 bpm,0.8,35.6,105 mg/dl,yes,1.8,0
+30,M,asymptomatic,121,224,,0.7,26.6kg/m2,97,yes,0.4,1
+45,M,asymptomatic,125 mmHg,277,202bpm,2.4,23.0 kg/m2,87 mg/dl,no,3.5,0
+30 yrs,M,asymptomatic,133mmHg,209 mg/dl,163bpm,1.9,24.6,76mg/dl,no,0.6 hrs,0
+41,M,typical angina,123,200mg/dl,156,0.4,19.7,113mg/dl,no,6.7 hrs,0
+49,M,non-anginal,105 mmHg,194 mg/dl,153 bpm,1.3,32.4 kg/m2,71mg/dl,yes,0.7 hrs,1
+65,m,atypical angina,131 mmHg,238mg/dl,174bpm,0.9,31.0,115 mg/dl,no,1.8 hrs,1
+67 yrs,M,asymptomatic,128 mmHg,277,144 bpm,1.5,29.0kg/m2,84,yes,5.1,1
+40,Female,typical angina,114,304mg/dl,188,4.0,14.9,103 mg/dl,yes,4.0,1
+71,F,atypical angina,114 mmHg,210 mg/dl,157bpm,0.2,31.4,57mg/dl,no,3.6 hrs,0
+67,M,non-anginal,142 mmHg,1500,147,0.1,33.9,123mg/dl,no,7.0 hrs,1
+65,M,atypical angina,148mmHg,312 mg/dl,160,1.2,23.7,129,NO,3.0 hrs,1
+33,M,asymptomatic,,176,160,0.3,25.0 kg/m2,138 mg/dl,no,2.5,0
+70,M,non-anginal,131mmHg,263 mg/dl,160,0.3,25.1kg/m2,108mg/dl,no,3.9,1
+58,F,asymptomatic,107mmHg,305mg/dl,137bpm,0.1,27.7 kg/m2,101,no,5.7 hrs,0
+75,F,asymptomatic,145 mmHg,287,143 bpm,0.2,16.1 kg/m2,114mg/dl,yes,9.5 hrs,1
+35,M,typical angina,118,0,184bpm,1.1,19.7,112,N,1.9,0
+47 yrs,M,asymptomatic,124,282,137 bpm,0.1,31.4 kg/m2,N/A,no,2.2 hrs,1
+36,F,asymptomatic,108,217mg/dl,165bpm,1.5,x,71 mg/dl,yes,0.4,0
+56,M,asymptomatic,140,240mg/dl,174 bpm,1.5,15.5,76 mg/dl,no,3.9 hrs,0
+72,F,asymptomatic,161,197mg/dl,177,0.6,27.9kg/m2,108mg/dl,no,1.2 hrs,0
+77,Male,asymptomatic,113,298,105,0.8,24.0,106,yes,0.1,1
+49,M,non-anginal,145mmHg,240mg/dl,184,0.3,24.3 kg/m2,97 mg/dl,no,5.1,0
+46,F,,135mmHg,281,NA,0.5,,130 mg/dl,yes,2.8,0
+64,f,non-anginal,130,248mg/dl,153,1.7,26.1,129mg/dl,no,5.4,1
+73,F,non-anginal,121mmHg,276 mg/dl,145bpm,0.4,19.9,69,no,1.1 hrs,0
+66,F,atypical angina,116,290 mg/dl,170bpm,0.5,29.0,78,no,1.1 hrs,0
+54,M,atypical angina,152mmHg,196mg/dl,182,1.7,26.0,N/A,no,3.6,0
+66 yrs,M,,138,283mg/dl,168 bpm,4.1,22.3kg/m2,88,no,1.7,1
+63,F,typical angina,133 mmHg,269,186bpm,1.1,27.2,148 mg/dl,no,2.2 hrs,0
+34,F,,133 mmHg,288,176,0.8,27.9,78 mg/dl,yes,0.4 hrs,1
+35,M,asymptomatic,105mmHg,265mg/dl,170,1.4,33.4 kg/m2,109,no,3.0 hrs,0
+47,M,asymptomatic,141mmHg,317,166 bpm,2.2,27.4,97 mg/dl,yes,1.8 hrs,0
+54,F,asymptomatic,127,181,159bpm,1.8,32.9,128mg/dl,no,9.1,0
+66,Male,asymptomatic,123 mmHg,274 mg/dl,154 bpm,0.0,16.6,N/A,no,1.7 hrs,0
+56,M,atypical angina,118 mmHg,149mg/dl,173bpm,0.6,29.7kg/m2,108 mg/dl,N,0.6 hrs,0
+57 yrs,f,atypical angina,131,187mg/dl,169,2.3,22.4,99mg/dl,yes,3.4,0
+58,F,non-anginal,165,207 mg/dl,138,0.9,23.9kg/m2,137,yes,2.4 hrs,1
+57,m,asymptomatic,138,196mg/dl,156 bpm,0.2,34.0,NA,no,5.8,0
+68,M,non-anginal,161mmHg,261,161bpm,0.6,29.1,151mg/dl,no,0.7 hrs,0
+59,M,typical angina,118 mmHg,n.a.,174,0.2,34.4,99,yes,5.3 hrs,0
+33 yrs,F,typical angina,150,191 mg/dl,214,0.4,30.6,58 mg/dl,no,1.0,0
+41,F,asymptomatic,missing,195,148,0.3,33.9,136,yes,1.6 hrs,0
+72,M,asymptomatic,127mmHg,NA,135 bpm,3.6,29.5 kg/m2,49mg/dl,no,2.0,1
+29,F,non-anginal,117 mmHg,242,177,0.4,33.3,98,yes,7.6 hrs,0
+71,M,asymptomatic,137 mmHg,201mg/dl,152 bpm,3.1,29.3,89,no,1.6,0
+63,F,asymptomatic,148 mmHg,172,167,1.6,23.0 kg/m2,81mg/dl,no,5.8,0
+75,M,asymptomatic,116 mmHg,331,168bpm,0.3,,92,no,1.8,1
+40,M,atypical angina,98mmHg,235,N/A,1.3,25.0 kg/m2,155,yes,0.9 hrs,0
+40,M,asymptomatic,181,292,187bpm,1.5,26.8kg/m2,82,no,5.9,0
+33 yrs,M,non-anginal,129 mmHg,237,195 bpm,3.2,33.3,119,yes,1.7,0
+47,M,non-anginal,123,288,170 bpm,0.2,22.8,131,no,0.7,0
+76,F,asymptomatic,126mmHg,235 mg/dl,108,0.4,21.7,122mg/dl,no,4.2,1
+49,M,typical angina,132,140 mg/dl,168bpm,2.4,21.9 kg/m2,89 mg/dl,no,3.3,0
+61 yrs,M,asymptomatic,138,276 mg/dl,152,0.3,22.6,137mg/dl,yes,2.6,1
+35 yrs,F,non-anginal,152 mmHg,179,209bpm,0.3,22.8,65 mg/dl,no,2.6 hrs,0
+30 yrs,Female,asymptomatic,,227,176 bpm,0.9,24.0,102mg/dl,no,1.4 hrs,1
+34,M,asymptomatic,152,,160bpm,0.3,17.2 kg/m2,74mg/dl,yes,2.5,0
+62 yrs,M,atypical angina,115 mmHg,194,,0.3,21.8 kg/m2,60,no,1.3 hrs,0
+57,M,atypical angina,145,160mg/dl,179,1.0,26.9,106mg/dl,yes,1.2,0
+68 yrs,M,non-anginal,102,204,x,0.1,24.6,55mg/dl,yes,8.2,0
+35,Male,asymptomatic,138,267mg/dl,165bpm,2.1,21.3,113 mg/dl,no,7.7,0
+38,F,atypical angina,125mmHg,231,190 bpm,0.3,29.6,78 mg/dl,no,5.7 hrs,0
+63,M,atypical angina,138 mmHg,229,147,0.5,20.6kg/m2,62,no,4.6,1
+72,F,non-anginal,124,170mg/dl,162bpm,0.5,25.5,150 mg/dl,no,4.7 hrs,0
+61,M,asymptomatic,160mmHg,267 mg/dl,187,0.5,27.2,94 mg/dl,no,2.6 hrs,1
+74,F,non-anginal,177mmHg,254,140bpm,2.4,NA,,yes,1.0,1
+48,F,typical angina,150,251mg/dl,167bpm,3.5,,69 mg/dl,yes,3.9,1
+33,M,asymptomatic,113 mmHg,351,170bpm,0.3,23.2 kg/m2,132mg/dl,yes,5.2,0
+49,M,non-anginal,143,190mg/dl,178bpm,0.1,29.4,152 mg/dl,no,2.5 hrs,0
+38,F,asymptomatic,145,243,174,1.0,27.5kg/m2,69,no,3.1,0
+57,M,non-anginal,144 mmHg,301mg/dl,146,2.2,23.7kg/m2,,no,3.5,1
+68,M,typical angina,143mmHg,275mg/dl,158 bpm,0.4,27.8 kg/m2,91,no,3.6,0
+53,F,asymptomatic,,222mg/dl,152bpm,0.6,26.7kg/m2,136,no,5.2 hrs,0
+60,M,typical angina,157 mmHg,188,168,0.2,18.5,114,yes,4.7,0
+33,F,atypical angina,120,191,193bpm,0.8,25.6,120mg/dl,yes,0.8 hrs,0
+33,m,non-anginal,139mmHg,199mg/dl,191 bpm,1.0,29.7 kg/m2,120mg/dl,yes,0.7 hrs,0
+65 yrs,f,typical angina,132mmHg,297 mg/dl,149,4.8,29.4kg/m2,?,no,8.1 hrs,0
+60 yrs,M,atypical angina,120mmHg,245mg/dl,192bpm,0.0,29.8,112 mg/dl,no,8.7,0
+50,F,asymptomatic,137mmHg,253,183 bpm,1.6,N/A,89,no,5.7,0
+51,M,asymptomatic,139,217,177,0.5,26.1,105 mg/dl,no,2.2,0
+39 yrs,M,asymptomatic,129 mmHg,197,172 bpm,1.3,26.2 kg/m2,79,yes,2.8,0
+32 yrs,M,non-anginal,140,274,N/A,1.7,30.7kg/m2,155,no,3.6 hrs,0
+54 yrs,M,asymptomatic,125,188,150 bpm,1.9,26.3,133 mg/dl,no,3.0,1
+67 yrs,F,asymptomatic,153 mmHg,112,184bpm,0.0,23.1,106 mg/dl,no,0.6,0
+74,M,non-anginal,120mmHg,337mg/dl,140bpm,1.3,24.8kg/m2,59,yes,2.8,0
+63,M,asymptomatic,128,313,152bpm,0.1,35.4,87,no,1.0 hrs,1
+59,M,asymptomatic,134,209,171 bpm,0.5,30.6 kg/m2,52 mg/dl,yes,10.4,0
+77,F,asymptomatic,134 mmHg,222mg/dl,168,0.3,31.0,60,no,2.0,1
+45,M,asymptomatic,131,218,200,0.6,30.6 kg/m2,98 mg/dl,yes,1.2,0
+47 yrs,M,asymptomatic,124,282,137 bpm,0.1,31.4 kg/m2,N/A,no,2.2 hrs,1
+46,M,asymptomatic,400 mmHg,205mg/dl,181bpm,0.9,28.4 kg/m2,88mg/dl,no,7.3 hrs,0
+66,M,asymptomatic,161mmHg,,144bpm,1.4,29.8kg/m2,75,yes,1.3,1
+55 yrs,M,asymptomatic,159,236,192bpm,0.6,26.1,n.a.,no,2.1,0
+61,M,asymptomatic,136mmHg,293,170bpm,0.3,25.8 kg/m2,103 mg/dl,no,0.6,0
+57,F,non-anginal,131mmHg,207,165,0.7,32.3 kg/m2,99 mg/dl,no,4.2 hrs,0
+44,m,non-anginal,98mmHg,329 mg/dl,,0.9,22.9,108,yes,2.5 hrs,0
+41,M,asymptomatic,118mmHg,252,169bpm,1.1,25.1,86 mg/dl,no,2.1,0
+40,M,asymptomatic,107,292mg/dl,169bpm,0.5,33.5,140,no,1.7 hrs,1
+49,F,asymptomatic,114,213,156bpm,0.7,29.2kg/m2,n.a.,no,2.3 hrs,0
+34 yrs,M,asymptomatic,136mmHg,235 mg/dl,199bpm,2.6,28.6kg/m2,97,no,1.1,0
+59,F,asymptomatic,111 mmHg,212mg/dl,160,0.5,25.6kg/m2,80,yes,2.8 hrs,0
+33,M,atypical angina,NA,,169 bpm,0.7,29.9,108 mg/dl,no,3.6 hrs,0
+68,M,asymptomatic,,219 mg/dl,161 bpm,0.2,25.1,147 mg/dl,no,1.8,1
+61,M,asymptomatic,95,226,156,0.1,270,62,no,2.6 hrs,1
+32,F,atypical angina,134,314mg/dl,173bpm,1.2,31.6,72mg/dl,yes,2.8,0
+38 yrs,M,non-anginal,106,161,193bpm,0.3,20.9,150mg/dl,no,1.8,0
+53,F,typical angina,137mmHg,240mg/dl,20 bpm,0.7,17.9,100mg/dl,yes,0.7,0
+55,M,asymptomatic,?,200,164,0.3,34.0kg/m2,116,no,1.7,0
+52,M,non-anginal,148mmHg,,179bpm,0.8,20.3 kg/m2,110mg/dl,yes,0.8,0
+75,F,typical angina,129 mmHg,232 mg/dl,x,0.8,25.0kg/m2,107mg/dl,no,1.3,0
+41,M,non-anginal,170 mmHg,257mg/dl,160bpm,3.2,29.6,128mg/dl,no,3.5,1
+63,M,asymptomatic,118mmHg,244mg/dl,111 bpm,0.1,28.0kg/m2,85,no,2.8 hrs,1
+40,m,asymptomatic,112,194,,1.6,29.9kg/m2,91 mg/dl,no,5.2 hrs,0
+45 yrs,Male,typical angina,139 mmHg,247mg/dl,202 bpm,0.6,23.8,105mg/dl,yes,0.8,0
+75,F,non-anginal,118,307 mg/dl,133,0.3,28.5,59 mg/dl,no,0.5 hrs,1
+68 yrs,M,typical angina,,196 mg/dl,166,0.7,19.4,148,yes,8.1,0
+46,M,non-anginal,108 mmHg,293 mg/dl,176bpm,0.3,21.4,121,no,2.9,0
+69,F,non-anginal,124 mmHg,262 mg/dl,157 bpm,2.8,32.6kg/m2,68,yes,0.7 hrs,1
+50,M,asymptomatic,NA,176mg/dl,142 bpm,1.8,30.5,108,yes,1.6 hrs,1
+41,Male,asymptomatic,115mmHg,238 mg/dl,164bpm,0.2,32.3kg/m2,92,no,3.0 hrs,0
+43 yrs,F,asymptomatic,146,170 mg/dl,157,1.4,21.9kg/m2,153 mg/dl,yes,2.1 hrs,0
+45 yrs,F,asymptomatic,103,266,174 bpm,0.3,23.3kg/m2,112 mg/dl,no,5.7 hrs,0
+61 yrs,Female,asymptomatic,145 mmHg,271,142,3.8,31.0kg/m2,92,yes,1.7 hrs,1
+75 yrs,M,asymptomatic,140mmHg,306mg/dl,147bpm,0.8,29.4kg/m2,131 mg/dl,no,12.2 hrs,1
+59,M,asymptomatic,146mmHg,0,180bpm,0.7,29.5,107 mg/dl,no,3.6,0
+72 yrs,M,asymptomatic,129mmHg,265 mg/dl,159,0.8,18.9kg/m2,102,no,2.3,1
+48,M,asymptomatic,105mmHg,286,153bpm,0.4,38.7kg/m2,123mg/dl,no,1.0 hrs,0
+77 yrs,M,atypical angina,125mmHg,268 mg/dl,170bpm,1.5,26.6,108 mg/dl,Y,5.7 hrs,0
+62,M,asymptomatic,166,230mg/dl,145 bpm,1.1,29.0,97mg/dl,no,0.8 hrs,1
+47 yrs,F,atypical angina,127,281,178 bpm,0.4,30.2,88,no,2.1 hrs,0
+36,M,asymptomatic,142 mmHg,226mg/dl,169 bpm,2.4,24.1 kg/m2,109mg/dl,no,1.2,1
+74,F,atypical angina,153,,164bpm,1.6,NA,124mg/dl,no,1.4 hrs,0
+51,F,typical angina,161,missing,192 bpm,1.5,26.6kg/m2,60,no,1.6 hrs,0
+57,F,asymptomatic,152 mmHg,305,190 bpm,0.8,30.8,95mg/dl,yes,4.3 hrs,0
+75 yrs,M,atypical angina,136mmHg,295mg/dl,140bpm,1.1,31.5,125 mg/dl,yes,2.6,1
+58,M,asymptomatic,131mmHg,257 mg/dl,,0.7,28.5,58 mg/dl,yes,1.3,1
+45 yrs,F,non-anginal,134,216 mg/dl,,2.7,29.5 kg/m2,100mg/dl,no,3.6,0
+54 yrs,M,non-anginal,141mmHg,245 mg/dl,173,1.7,32.1 kg/m2,115,yes,0.5 hrs,0
+48 yrs,F,asymptomatic,101,239,154bpm,1.5,28.7kg/m2,98mg/dl,yes,1.4,1
+64,M,atypical angina,,229 mg/dl,160 bpm,1.0,15.2kg/m2,130 mg/dl,Y,2.9 hrs,0
+59 yrs,M,non-anginal,139 mmHg,218,163,0.4,30.3,125mg/dl,no,0.3 hrs,0
+37,Female,non-anginal,116 mmHg,163mg/dl,184,1.1,31.4,82mg/dl,yes,0.5 hrs,0
+62,F,non-anginal,112 mmHg,277 mg/dl,179bpm,2.0,24.3,118,yes,1.5,1
+48,F,,101,239mg/dl,170,0.5,,154 mg/dl,no,3.7,0
+63 yrs,M,non-anginal,137 mmHg,318 mg/dl,126bpm,2.9,28.4,94,yes,2.6,1
+64,M,atypical angina,,290 mg/dl,180bpm,1.7,27.1kg/m2,128mg/dl,NO,2.0 hrs,0
+44 yrs,F,typical angina,144mmHg,159 mg/dl,161bpm,0.1,23.9 kg/m2,97 mg/dl,yes,1.7 hrs,0
+34,Female,asymptomatic,145 mmHg,286,164 bpm,0.9,30.9,105 mg/dl,no,2.4 hrs,0
+66,M,asymptomatic,161mmHg,,144bpm,1.4,29.8kg/m2,75,yes,1.3,1
+33,M,atypical angina,123mmHg,289mg/dl,192 bpm,1.3,28.9,104mg/dl,no,7.6,0
+58,F,non-anginal,130mmHg,236mg/dl,158 bpm,0.5,21.0kg/m2,76 mg/dl,yes,2.9,0
+41,F,non-anginal,152mmHg,197 mg/dl,179 bpm,2.3,32.4,142 mg/dl,N,3.8 hrs,0
+49 yrs,F,atypical angina,128 mmHg,250 mg/dl,,0.2,27.7,119,no,9.3,0
+75 yrs,M,atypical angina,124,?,137bpm,0.3,24.9kg/m2,70 mg/dl,no,1.1 hrs,1
+75 yrs,M,non-anginal,124mmHg,,176bpm,0.8,22.5 kg/m2,134,yes,1.9 hrs,0
+69 yrs,F,atypical angina,138 mmHg,268mg/dl,154bpm,1.0,29.9 kg/m2,111,no,3.7,0
+59,M,atypical angina,148,203,157,1.0,27.7 kg/m2,67mg/dl,N,1.8 hrs,0
+72,M,asymptomatic,141 mmHg,280 mg/dl,154,0.2,32.5kg/m2,96,no,5.1 hrs,1
+54,M,non-anginal,165 mmHg,289 mg/dl,180 bpm,1.1,,33,yes,0.5,0
+40,M,asymptomatic,141 mmHg,299mg/dl,164,0.6,26.1,136mg/dl,no,2.4 hrs,1
+53,M,asymptomatic,116mmHg,254mg/dl,145,1.6,16.0,,no,2.1 hrs,1
+58 yrs,M,typical angina,113mmHg,244,193,0.2,22.0,134,yes,2.4,0
+67,M,typical angina,145 mmHg,209,174 bpm,1.7,x,126mg/dl,no,3.3 hrs,0
+42 yrs,M,non-anginal,131mmHg,,?,1.5,32.5,109mg/dl,yes,0.8,0
+62 yrs,Female,typical angina,145,212,194 bpm,0.6,31.2,,yes,3.2 hrs,0
+67 yrs,F,asymptomatic,106 mmHg,250mg/dl,159bpm,1.8,20.7,124mg/dl,no,2.5,1
+72,F,non-anginal,131,196,165,0.9,29.5,59,no,1.1 hrs,0
+36,m,atypical angina,142mmHg,281mg/dl,158,0.1,27.4,125mg/dl,no,1.3,0
+44 yrs,M,asymptomatic,137mmHg,297,193,0.3,23.2,87,yes,1.9 hrs,1
+52,F,atypical angina,119mmHg,209mg/dl,189,2.0,31.3,143mg/dl,yes,5.5,0
+73 yrs,f,non-anginal,123mmHg,197mg/dl,145bpm,0.2,28.4 kg/m2,129mg/dl,yes,4.8 hrs,0
+72,F,typical angina,170 mmHg,239mg/dl,178 bpm,0.1,27.9,116mg/dl,yes,2.4 hrs,0
+32,F,non-anginal,117mmHg,222,193,0.9,25.3,124,yes,0.7 hrs,0
+64,F,typical angina,145,293mg/dl,133 bpm,0.6,18.3,108mg/dl,no,4.1 hrs,1
+56,Male,atypical angina,146 mmHg,203,169,0.2,38.7kg/m2,83,no,2.3,0
+75,M,asymptomatic,124mmHg,253,160,2.9,27.8 kg/m2,128,yes,5.4,1
+60,F,non-anginal,109,207 mg/dl,138bpm,1.5,32.8 kg/m2,96 mg/dl,no,12.3 hrs,0
+74,M,atypical angina,118mmHg,201 mg/dl,124bpm,0.1,31.9 kg/m2,94mg/dl,yes,1.3 hrs,0
+41,Female,asymptomatic,129 mmHg,281 mg/dl,191 bpm,1.0,33.0 kg/m2,84 mg/dl,no,0.8 hrs,0
+40 yrs,F,non-anginal,113 mmHg,,199,0.2,23.1,83 mg/dl,N,2.3 hrs,0
+44 yrs,F,,113,293mg/dl,178,0.0,26.9,123mg/dl,yes,4.1,0
+57,m,asymptomatic,137mmHg,297mg/dl,152 bpm,0.0,21.9,108 mg/dl,no,4.9 hrs,0
+29,M,atypical angina,138mmHg,272mg/dl,206,0.4,21.9,120 mg/dl,no,3.8,0
+69,Male,asymptomatic,142mmHg,196 mg/dl,172 bpm,0.5,17.2,111,no,4.1,1
+72 yrs,M,typical angina,155,239,186,0.5,23.7 kg/m2,147,no,2.5 hrs,0
+52,M,non-anginal,100,258,197 bpm,0.0,35.1,120,yes,4.2,0
+71,F,atypical angina,132,164,148bpm,0.3,27.4 kg/m2,131mg/dl,no,3.6,0
+63,M,asymptomatic,148mmHg,212mg/dl,165,0.4,26.3,86 mg/dl,no,0.3,0
+69,M,asymptomatic,134mmHg,308,139 bpm,1.6,,64 mg/dl,no,2.1 hrs,1
+44,m,non-anginal,98mmHg,329 mg/dl,,0.9,22.9,108,yes,2.5 hrs,0
+75,M,asymptomatic,125 mmHg,221,159bpm,1.0,25.0,118 mg/dl,yes,2.2,0
+64,Male,non-anginal,101,206,165,0.3,29.4kg/m2,125 mg/dl,no,3.7,1
+63,m,typical angina,129,224 mg/dl,171 bpm,1.5,29.5,136,no,1.9,1
+75,M,typical angina,116 mmHg,131,149,1.0,NA,93,no,1.9,0
+31,M,non-anginal,104mmHg,180 mg/dl,164,1.7,34.3kg/m2,137 mg/dl,no,7.6 hrs,0
+50 yrs,M,asymptomatic,107,253,184,0.4,30.3,149mg/dl,yes,1.2 hrs,0
+46,M,asymptomatic,128 mmHg,200,,2.9,32.6,121,yes,0.9,1
+49,M,typical angina,127,296,175,0.3,27.1,78mg/dl,no,2.0 hrs,0
+33,Female,asymptomatic,146,164 mg/dl,209,1.3,28.2 kg/m2,102mg/dl,no,2.9 hrs,0
+31,M,non-anginal,142 mmHg,207mg/dl,185bpm,2.1,27.0,146,yes,0.8,0
+42 yrs,M,asymptomatic,189 mmHg,185,179bpm,1.9,25.3,152 mg/dl,no,1.5 hrs,0
+69 yrs,M,,114,245mg/dl,170,0.9,32.6,123,no,4.5 hrs,0
+73 yrs,M,asymptomatic,147 mmHg,269mg/dl,150,0.7,25.9,120 mg/dl,N,4.1,1
+64,F,asymptomatic,132 mmHg,231,158bpm,5.0,30.4kg/m2,112,no,6.3,1
+59,M,non-anginal,145mmHg,247,128 bpm,2.3,18.1,114,no,5.2 hrs,0
+66,F,atypical angina,153,314,185 bpm,1.7,25.6kg/m2,77,yes,1.0,1
+75,M,asymptomatic,117,266,158 bpm,1.0,,84mg/dl,yes,4.6,0
+62 yrs,M,atypical angina,n.a.,237,164,3.8,21.9,55,no,5.8,0
+75,F,asymptomatic,114,184,146 bpm,0.3,21.2 kg/m2,119mg/dl,no,3.4 hrs,1
+46 yrs,F,non-anginal,151 mmHg,262mg/dl,190,0.4,34.1,105 mg/dl,no,2.9,0
+56,M,asymptomatic,140,173mg/dl,170,0.6,37.0kg/m2,118,yes,1.6,0
+35,F,asymptomatic,,226,184 bpm,4.3,24.5,105,yes,2.8,0
+73 yrs,F,asymptomatic,135 mmHg,240,145bpm,1.6,32.3,163mg/dl,yes,6.4,1
+44 yrs,F,asymptomatic,117 mmHg,231,157 bpm,0.1,22.1kg/m2,105mg/dl,no,2.0 hrs,0
+35,M,atypical angina,125,184mg/dl,202 bpm,1.7,25.2,67 mg/dl,no,5.8,0
+51,M,non-anginal,129,305mg/dl,149 bpm,0.6,26.2kg/m2,100,Y,0.5 hrs,1
+72,M,asymptomatic,131 mmHg,174 mg/dl,163,0.4,28.3 kg/m2,91 mg/dl,no,1.6,1

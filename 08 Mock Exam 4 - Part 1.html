@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mock Exam 4: Part 1 (theory)</title><style>
+:root{--bg:#fbfbf8;--fg:#1d1d1f;--mut:#5f6368;--card:#ffffff;--line:#e2e2dc;--acc:#2f55c4;--acc2:#e8eefc;
+--sol:#f2f6ff;--hint:#fff7e2;--warn:#fff1f0;--warnb:#e8b4ae;--ok:#eef8f0;--okb:#a9d5b3;--code:#f4f4f1;--hl:#fff3bf;
+--l1:#e6f4ea;--l2:#e8eefc;--l3:#fde8e8;--l4:#efe6fb}
+@media (prefers-color-scheme:dark){:root{--bg:#151619;--fg:#e9e9e6;--mut:#a3a6ab;--card:#1d1f23;--line:#33363c;--acc:#8fb0ff;
+--acc2:#22304f;--sol:#1a2333;--hint:#2b2617;--warn:#2e1b1a;--warnb:#7a3c36;--ok:#18281c;--okb:#3d6b49;--code:#23252a;--hl:#3b3517;
+--l1:#1d3324;--l2:#22304f;--l3:#3d2222;--l4:#30264a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:24px 16px 80px}
+header.top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .in{max-width:860px;margin:0 auto;padding:8px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:14px}
+header.top a{color:var(--acc);text-decoration:none}
+header.top .sp{flex:1}
+button{font:inherit;font-size:13px;padding:4px 10px;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:6px;cursor:pointer}
+button:hover{border-color:var(--acc)}
+#progress{color:var(--mut)}
+h1{font-size:30px;line-height:1.2;margin:18px 0 6px}
+.sub{color:var(--mut);margin:0 0 6px}
+.day{display:inline-block;background:var(--acc2);color:var(--acc);border-radius:20px;padding:2px 12px;font-size:13px;font-weight:600;margin-bottom:8px}
+nav.toc{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 18px;margin:18px 0 8px}
+nav.toc ul{margin:4px 0 10px;padding-left:20px}.tocg{margin-top:6px}
+nav.toc a{color:var(--acc);text-decoration:none}
+nav.toc .cnt{color:var(--mut);font-size:13px}
+h2{font-size:22px;margin:40px 0 10px;padding-top:8px;border-top:2px solid var(--line)}
+h3{font-size:18px;margin:24px 0 6px}
+p{margin:8px 0}
+a{color:var(--acc)}
+table{border-collapse:collapse;margin:10px 0;font-size:15px;max-width:100%;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:4px 10px;text-align:center;white-space:nowrap}
+th{background:var(--code);font-weight:600}
+tr.hl td{background:var(--hl);font-weight:600}
+td.l,th.l{text-align:left}
+caption{caption-side:top;text-align:left;color:var(--mut);font-size:13px;padding-bottom:2px}
+table.mat{display:inline-table;border-left:2px solid var(--fg);border-right:2px solid var(--fg);border-radius:4px;margin:4px 6px;vertical-align:middle}
+table.mat td{border:none;padding:1px 8px;text-align:right}
+.mname{font-family:"Cambria Math","STIX Two Math",Georgia,serif;font-style:italic}
+.eq{font-family:"Cambria Math","STIX Two Math",Georgia,serif;font-size:17px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 14px;margin:8px 0;overflow-x:auto}
+.box{border-radius:10px;padding:10px 16px;margin:14px 0;border:1px solid var(--line);background:var(--card)}
+.box-t{font-weight:700;margin-bottom:4px}
+.box.formula{border-color:var(--acc);background:var(--acc2)}
+.box.warn{background:var(--warn);border-color:var(--warnb)}
+.box.ok{background:var(--ok);border-color:var(--okb)}
+.box.idea{background:var(--hint)}
+.codewrap{margin:10px 0}
+.code-t{font-size:13px;color:var(--mut);margin-bottom:2px}
+pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 12px;overflow-x:auto;font-size:13.5px;line-height:1.45;margin:0}
+code{font-family:Consolas,"Cascadia Mono",Menlo,monospace}
+p code,li code,td code,.q code{background:var(--code);padding:0 4px;border-radius:4px;font-size:.92em}
+pre code{padding:0!important;background:none!important;font-size:inherit!important}
+ol.steps{padding-left:22px}
+ol.steps li{margin:3px 0}
+.intro{color:var(--fg);margin:4px 0 12px}
+.prob{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:12px 0}
+.meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;margin-bottom:6px}
+.pid{font-weight:700;color:var(--acc)}
+.lvl{border-radius:20px;padding:0 9px;font-weight:600}
+.lvl.l1{background:var(--l1)}.lvl.l2{background:var(--l2)}.lvl.l3{background:var(--l3)}.lvl.l4{background:var(--l4)}
+.pts,.tag{color:var(--mut)}
+.donebox{margin-left:auto;color:var(--mut);cursor:pointer;user-select:none}
+details{margin-top:8px;border-radius:8px}
+details>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--acc);padding:2px 0}
+details.hint>div{background:var(--hint);padding:8px 12px;border-radius:8px;margin-top:4px}
+details.sol>div{background:var(--sol);padding:10px 14px;border-radius:8px;margin-top:4px;overflow-x:auto}
+.ans{margin-bottom:6px}
+.tree{font-family:Consolas,"Cascadia Mono",Menlo,monospace;font-size:13.5px;white-space:pre;line-height:1.5;background:var(--code);border-radius:8px;padding:10px 12px;overflow-x:auto;border:1px solid var(--line)}
+.muted{color:var(--mut)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.grid2{grid-template-columns:1fr}h1{font-size:25px}}
+@media print{header.top,button,.donebox,details,nav.toc{display:none!important}
+body{background:#fff;color:#000;font-size:13px}.prob{break-inside:avoid;border-color:#bbb}h2{break-after:avoid}}
+</style></head>
+<body data-page="mock4">
+<header class="top"><div class="in"><a href="00%20START%20HERE.html">&larr; All topics</a><span class="sp"></span>
+<span id="progress"></span><button id="showall" type="button">Show all solutions</button><button id="hideall" type="button">Hide all</button></div></header>
+<div class="wrap">
+<div class="day">Plan: Wednesday, November 18</div>
+<h1>Mock Exam 4: Part 1 (theory)</h1>
+<p class="sub">A wider-coverage paper in case this year's questions move to other topics: 30 points.</p>
+<nav class="toc"><div class="tocg"><b>Learn</b><ul><li><a href="#l0">Instructions</a></li><li><a href="#l7">After the paper</a></li></ul></div><div class="tocg"><b>Practice</b> <span class="cnt">(15 problems)</span><ul class="pr"><li><a href="#pA">A. Short answers (10 points)</a> <span class="cnt">10</span></li><li><a href="#pB">B. AdaBoost (4 points)</a> <span class="cnt">1</span></li><li><a href="#pC">C. Gradient boosting (4 points)</a> <span class="cnt">1</span></li><li><a href="#pD">D. PCA (4 points)</a> <span class="cnt">1</span></li><li><a href="#pE">E. CNN shapes (4 points)</a> <span class="cnt">1</span></li><li><a href="#pF">F. GMM (4 points)</a> <span class="cnt">1</span></li></ul></div></nav>
+<section id="l0"><h2>Instructions</h2>
+<p>Closed book, calculator and your A4 cheat sheet allowed. <b>Show your steps</b>: in 2023 each calculation question gave one point for the equation and one for the number.
+Suggested time: <b>60 minutes</b>. Do the whole paper on paper before opening any solution.</p>
+<p><button type="button" id="tstart">Start 60:00</button> <button type="button" id="tstop">Pause</button> <span id="tshow" style="font-size:22px;font-weight:700;margin-left:10px">60:00</span></p>
+<script>(function(){var left=3600,t=null,el=document.getElementById('tshow');
+function show(){var m=Math.floor(left/60),s=left%60;el.textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;}
+document.getElementById('tstart').onclick=function(){if(t)return;t=setInterval(function(){if(left>0){left--;show();}else{clearInterval(t);t=null;el.textContent='Time!';}},1000);};
+document.getElementById('tstop').onclick=function(){clearInterval(t);t=null;};show();})();</script>
+</section><section id="pA"><h2>A. Short answers (10 points)</h2><div class="prob" id="A1"><div class="meta"><span class="pid">A1</span><span class="lvl l1">Warm-up</span><span class="pts">1 pt</span><label class="donebox"><input type="checkbox" class="done" data-id="A1"> done</label></div><div class="q">Given X of shape (2300, 12), i.e. 2300 samples with 12 features, create an nn.Linear layer that projects it to 64 features.</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> <code>nn.Linear(12, 64)</code></div><p class="muted">in_features = 12 (the batch size 2300 doesn't appear); output (2300, 64).</p></div></details></div><div class="prob" id="A2"><div class="meta"><span class="pid">A2</span><span class="lvl l1">Warm-up</span><span class="pts">1 pt</span><label class="donebox"><input type="checkbox" class="done" data-id="A2"> done</label></div><div class="q">Given the input shape (64, 1, 32, 32) and a CNN layer with kernel size 5, stride 2, padding 1 and 16 output channels, what is the output shape?</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> (64, 16, 15, 15)</div><p class="muted">O = (I − K + 2P)/S + 1 = (32 − 5 + 2·1)/2 + 1 = 29/2 + 1 = 14.5 + 1 → round down: ⌊14.5⌋ + 1 = <b>15</b></p></div></details></div><div class="prob" id="A3"><div class="meta"><span class="pid">A3</span><span class="lvl l1">Warm-up</span><span class="pts">1 pt</span><label class="donebox"><input type="checkbox" class="done" data-id="A3"> done</label></div><div class="q">For the above operation, how should you write the arguments of nn.Conv2d?</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> <code>nn.Conv2d(1, 16, 5, 2, 1)</code></div><p class="muted">(in_channels, out_channels, kernel_size, stride, padding).</p></div></details></div><div class="prob" id="A4"><div class="meta"><span class="pid">A4</span><span class="lvl l1">Warm-up</span><span class="pts">1 pt</span><label class="donebox"><input type="checkbox" class="done" data-id="A4"> done</label></div><div class="q">In GMM with 1500 samples, 3 features and 4 clusters, what is the shape of the covariances (as in the professor's code)?</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> (4, 3, 3)</div></div></details></div><div class="prob" id="A5"><div class="meta"><span class="pid">A5</span><span class="lvl l1">Warm-up</span><span class="pts">1 pt</span><label class="donebox"><input type="checkbox" class="done" data-id="A5"> done</label></div><div class="q">In PCA on X of shape (1000, 30) reduced to 2 components, what is the shape of the projection matrix B?</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> (30, 2), i.e. (n, n′)</div></div></details></div><div class="prob" id="A6"><div class="meta"><span class="pid">A6</span><span class="lvl l1">Warm-up</span><span class="pts">1 pt</span><label class="donebox"><input type="checkbox" class="done" data-id="A6"> done</label></div><div class="q">An RNN has input size 10 and hidden size 5. What is the shape of a single W<sub>h</sub>?</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> (5, 5)</div><p class="muted">Hidden size sets h<sub>t</sub>, W<sub>h</sub> and b; it doesn't depend on the sequence length.</p></div></details></div><div class="prob" id="A7"><div class="meta"><span class="pid">A7</span><span class="lvl l1">Warm-up</span><span class="pts">1 pt</span><label class="donebox"><input type="checkbox" class="done" data-id="A7"> done</label></div><div class="q">Why does an LSTM layer have 4× the parameters of an RNN layer of the same size?</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> It computes four gate/candidate vectors, each with its own W<sub>x</sub>, W<sub>h</sub> and biases.</div></div></details></div><div class="prob" id="A8"><div class="meta"><span class="pid">A8</span><span class="lvl l1">Warm-up</span><span class="pts">1 pt</span><label class="donebox"><input type="checkbox" class="done" data-id="A8"> done</label></div><div class="q">Do decision trees need feature scaling? Why?</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> No. Each split compares one feature to a threshold, so the scale of other features doesn't matter, and rescaling a feature just rescales its thresholds.</div></div></details></div><div class="prob" id="A9"><div class="meta"><span class="pid">A9</span><span class="lvl l1">Warm-up</span><span class="pts">1 pt</span><label class="donebox"><input type="checkbox" class="done" data-id="A9"> done</label></div><div class="q">When does AdaBoost stop? Three ways.</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> When the number of classifiers is reached, by early stopping on validation, or when an error threshold is reached.</div><p class="muted">AdaBoost workshop Q12.</p></div></details></div><div class="prob" id="A10"><div class="meta"><span class="pid">A10</span><span class="lvl l1">Warm-up</span><span class="pts">1 pt</span><label class="donebox"><input type="checkbox" class="done" data-id="A10"> done</label></div><div class="q">What is the difference between mse and mse.item()?</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> mse is a 0-dimensional tensor (with gradient history); .item() returns a plain Python float.</div><p class="muted">FFN workshop Q10.</p></div></details></div></section><section id="pB"><h2>B. AdaBoost (4 points)</h2><div class="prob" id="B1"><div class="meta"><span class="pid">B1</span><span class="lvl l3">Exam level</span><span class="pts">4 pts</span><label class="donebox"><input type="checkbox" class="done" data-id="B1"> done</label></div><div class="q">AdaBoost. ŷ = [−1, −1, 1, 1, −1] and y = [1, −1, 1, 1, 1], with equal starting weights. Compute (a) the weights, (b) ε, (c) α, (d) the factors e<sup>−αŷy</sup>, (e) the new normalized weights. What are the new weights trying to achieve?</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> ε = 0.4, α = 0.2027, new w = [0.25, 0.1667, 0.1667, 0.1667, 0.25]; they make the next classifier focus on the misclassified samples.</div><ol class="steps"><li>Misclassified samples (ŷ ≠ y): 1, 5.</li><li>ε<sub>1</sub> = (sum of their weights) / (sum of all weights) = (0.2 + 0.2) / 1 = <b>0.4</b></li><li>α<sub>1</sub> = ½ ln((1 − ε)/ε) = ½ ln(0.6/0.4) = ½ ln(1.5) = <b>0.2027</b></li><li>Factor e<sup>−α·ŷ·y</sup>: correct samples (ŷ·y = 1) get e<sup>−0.2027</sup> = 0.8165; wrong samples (ŷ·y = −1) get e<sup>0.2027</sup> = 1.2247. Factors: [1.2247, 0.8165, 0.8165, 0.8165, 1.2247]</li><li>w × factor = [0.2449, 0.1633, 0.1633, 0.1633, 0.2449], which sums to 0.9798</li><li>Normalize (divide by 0.9798): <b>w<sub>2</sub> = [0.25, 0.1667, 0.1667, 0.1667, 0.25]</b></li></ol></div></details></div></section><section id="pC"><h2>C. Gradient boosting (4 points)</h2><div class="prob" id="C1"><div class="meta"><span class="pid">C1</span><span class="lvl l3">Exam level</span><span class="pts">4 pts</span><label class="donebox"><input type="checkbox" class="done" data-id="C1"> done</label></div><div class="q">Gradient boosting regression with stumps and learning rate 0.1. x = [1, 3, 4, 5, 8], y = [6, 4, 13, 19, 9]. Give h<sub>0</sub>, the residuals, the best stump on the residuals with its leaf values, and the updated predictions.</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> h<sub>0</sub> = 10.2; r = [−4.2, −6.2, 2.8, 8.8, −1.2]; stump x &lt; 3.5 → −5.2 / 3.4667; F<sub>1</sub> = [9.68, 9.68, 10.5467, 10.5467, 10.5467]</div><ol class="steps"><li>h<sub>0</sub> = mean(y) = 10.2</li><li>r = y − h<sub>0</sub> = [−4.2, −6.2, 2.8, 8.8, −1.2]</li><li>Stump search:<table class=""><thead><tr><th>x &lt; t</th><th>Left mean</th><th>Right mean</th><th>SSE</th></tr></thead><tbody><tr><td>2</td><td>−4.2</td><td>1.05</td><td>120.75</td></tr><tr class="hl"><td>3.5</td><td>−5.2</td><td>3.4667</td><td>52.6667</td></tr><tr><td>4.5</td><td>−2.5333</td><td>3.8</td><td>94.6667</td></tr><tr><td>6.5</td><td>0.3</td><td>−1.2</td><td>141</td></tr></tbody></table></li><li>F<sub>1</sub> = h<sub>0</sub> + 0.1·h<sub>1</sub>(x) = [9.68, 9.68, 10.5467, 10.5467, 10.5467]</li></ol></div></details></div></section><section id="pD"><h2>D. PCA (4 points)</h2><div class="prob" id="D1"><div class="meta"><span class="pid">D1</span><span class="lvl l3">Exam level</span><span class="pts">4 pts</span><label class="donebox"><input type="checkbox" class="done" data-id="D1"> done</label></div><div class="q">PCA. X = [[2, 4], [2, 7], [7, 6], [0, 3]]. Center the data, compute the covariance matrix (divide by m − 1), its eigenvalues, the first principal component, and project the data onto it.</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> λ = [10.223, 2.027]; b₁ = [0.9169, 0.3992] (or its negative); z = [−1.0869, 0.1108, 4.2958, −3.3198]</div><ol class="steps"><li>Mean of each feature: [2.75, 5]. Centered data X<sub>c</sub> = X − mean = [[−0.75, −1], [−0.75, 2], [4.25, 1], [−2.75, −2]]</li><li>Covariance S = X<sub>c</sub><sup>T</sup>X<sub>c</sub>/(m − 1) = (1/3) × [[26.75, 9], [9, 10]] = <table class="mat"><tbody><tr><td>8.9167</td><td>3</td></tr><tr><td>3</td><td>3.3333</td></tr></tbody></table></li><li>Eigenvalues of [[a, b], [b, d]]: λ = (a + d)/2 ± √(((a − d)/2)² + b²) = 6.125 ± √(7.7934 + 9) → <b>λ₁ = 10.223, λ₂ = 2.027</b></li><li>Eigenvector for λ₁: solve (S − λ₁I)v = 0 → v ∝ [b, λ₁ − a] = [3, 1.3063]; normalize to length 1: <b>b₁ = [0.9169, 0.3992]</b> (the sign is arbitrary: [−0.9169, −0.3992] is equally correct). Second component b₂ = [0.3992, −0.9169] (perpendicular).</li><li>Explained variance ratio of PC1 = λ₁/(λ₁ + λ₂) = 0.8345</li><li>Project onto PC1: z = X<sub>c</sub>·b₁ = <b>[−1.0869, 0.1108, 4.2958, −3.3198]</b> (shape (4, 1))</li><li>Reconstruct: X̂ = z·b₁<sup>T</sup> + mean = [[1.7535, 4.5661], [2.8516, 5.0442], [6.6886, 6.715], [−0.2938, 3.6746]]</li></ol></div></details></div></section><section id="pE"><h2>E. CNN shapes (4 points)</h2><div class="prob" id="E1"><div class="meta"><span class="pid">E1</span><span class="lvl l3">Exam level</span><span class="pts">4 pts</span><label class="donebox"><input type="checkbox" class="done" data-id="E1"> done</label></div><div class="q">Input batch shape (8, 1, 28, 28). The model is <code>nn.Sequential</code> of:<div class="codewrap"><pre><code>nn.Conv2d(1, 16, kernel_size=5, stride=1, padding=2)
+nn.ReLU()
+nn.MaxPool2d(2, 2)
+nn.Conv2d(16, 64, kernel_size=3, stride=1, padding=1)
+nn.BatchNorm2d(64)
+nn.ReLU()
+nn.MaxPool2d(2, 2)
+nn.Flatten()
+nn.Linear(???, 64)
+nn.ReLU()
+nn.Linear(64, 2)</code></pre></div>(a) What number replaces ??? (b) Give the shape after every layer. (c) How many trainable parameters does the model have?</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> (a) 3136 (b) see the table (c) 210,722</div><p class="muted">Conv2d(in, out, K, S, P)</p><table class=""><thead><tr><th>Layer</th><th>Size</th><th>Output shape</th><th>Parameters</th></tr></thead><tbody><tr><td>Conv2d(1, 16, 5, 1, 2)</td><td>(28 − 5 + 4)/1 + 1 = 28</td><td>(8, 16, 28, 28)</td><td>416</td></tr><tr><td>ReLU</td><td>unchanged</td><td>(8, 16, 28, 28)</td><td>0</td></tr><tr><td>MaxPool2d(2, 2)</td><td>⌊(28 − 2)/2⌋ + 1 = 14</td><td>(8, 16, 14, 14)</td><td>0</td></tr><tr><td>Conv2d(16, 64, 3, 1, 1)</td><td>(14 − 3 + 2)/1 + 1 = 14</td><td>(8, 64, 14, 14)</td><td>9,280</td></tr><tr><td>BatchNorm2d(64)</td><td>unchanged</td><td>(8, 64, 14, 14)</td><td>128</td></tr><tr><td>ReLU</td><td>unchanged</td><td>(8, 64, 14, 14)</td><td>0</td></tr><tr><td>MaxPool2d(2, 2)</td><td>⌊(14 − 2)/2⌋ + 1 = 7</td><td>(8, 64, 7, 7)</td><td>0</td></tr><tr><td>Flatten</td><td>64 × 7 × 7</td><td>(8, 3136)</td><td>0</td></tr><tr><td>Linear(3136, 64)</td><td></td><td>(8, 64)</td><td>200,768</td></tr><tr><td>ReLU</td><td></td><td>(8, 64)</td><td>0</td></tr><tr><td>Linear(64, 2)</td><td></td><td>(8, 2)</td><td>130</td></tr></tbody></table><p>Total: <b>210,722</b>. The ??? is the flattened size 3136.</p></div></details></div></section><section id="pF"><h2>F. GMM (4 points)</h2><div class="prob" id="F1"><div class="meta"><span class="pid">F1</span><span class="lvl l3">Exam level</span><span class="pts">4 pts</span><label class="donebox"><input type="checkbox" class="done" data-id="F1"> done</label></div><div class="q">1-D GMM with k = 2. x = [2, 5, 6, 7], μ = [2, 7], σ² = [1, 1], π = [0.5, 0.5]. Perform one E-step and one M-step.</div><details class="sol"><summary>Answer and solution</summary><div><div class="ans"><b>Answer:</b> r = [[1, 0], [0.0759, 0.9241], [0.0006, 0.9994], [0, 1]]; π = [0.2691, 0.7309], μ = [2.2135, 6.0259], σ² = [0.597, 0.6575]</div><p><b>E-step.</b> For every sample, the Gaussian density under each cluster, times π, then normalize across the row so each row of r sums to 1. Example for sample 1, cluster 1: N(2 | 2, 1) = 1/√(2π·1) · e<sup>−(2 − 2)²/(2·1)</sup> = 0.3989 · e<sup>0</sup> = 0.398942.</p><table class=""><thead><tr><th>i</th><th>x</th><th>N(x | c=1)</th><th>N(x | c=2)</th><th>π<sub>1</sub>·N</th><th>π<sub>2</sub>·N</th><th>r<sub>1</sub></th><th>r<sub>2</sub></th></tr></thead><tbody><tr><td>1</td><td>2</td><td>0.398942</td><td>0.000001</td><td>0.199471</td><td>0.000001</td><td>1</td><td>0</td></tr><tr><td>2</td><td>5</td><td>0.004432</td><td>0.053991</td><td>0.002216</td><td>0.026995</td><td>0.0759</td><td>0.9241</td></tr><tr><td>3</td><td>6</td><td>0.000134</td><td>0.241971</td><td>0.000067</td><td>0.120985</td><td>0.0006</td><td>0.9994</td></tr><tr><td>4</td><td>7</td><td>0.000001</td><td>0.398942</td><td>0.000001</td><td>0.199471</td><td>0</td><td>1</td></tr></tbody></table><p><b>M-step.</b></p><ol class="steps"><li>N<sub>c</sub> = column sums of r = [1.0764, 2.9236]</li><li>π<sub>new</sub> = N<sub>c</sub>/m = [0.2691, 0.7309]</li><li>μ<sub>1</sub> = Σ r<sub>1</sub>·x / N<sub>1</sub> = (1·2 + 0.0759·5 + 0.0006·6 + 0·7) / 1.0764 = <b>2.2135</b></li><li>μ<sub>2</sub> = Σ r<sub>2</sub>·x / N<sub>2</sub> = (0·2 + 0.9241·5 + 0.9994·6 + 1·7) / 2.9236 = <b>6.0259</b></li><li>σ²<sub>1</sub> = Σ r<sub>1</sub>·(x − μ<sub>1</sub>)² / N<sub>1</sub> = (1·(2 − 2.2135)² + 0.0759·(5 − 2.2135)² + 0.0006·(6 − 2.2135)² + 0·(7 − 2.2135)²) / 1.0764 = <b>0.597</b></li><li>σ²<sub>2</sub> = Σ r<sub>2</sub>·(x − μ<sub>2</sub>)² / N<sub>2</sub> = (0·(2 − 6.0259)² + 0.9241·(5 − 6.0259)² + 0.9994·(6 − 6.0259)² + 1·(7 − 6.0259)²) / 2.9236 = <b>0.6575</b></li></ol></div></details></div></section><section id="l7"><h2>After the paper</h2><p>Mark yourself with the solutions. For every lost point, write the fix on your cheat sheet draft. Then redo that question type on its topic page.</p></section>
+<p class="muted" style="margin-top:40px">Every number in these solutions was computed by code. Answers are rounded to 4 decimal places; small differences in the last digit from your calculator are fine.</p>
+</div>
+<script>
+(function(){
+  var KEY='ep:'+document.body.getAttribute('data-page');
+  var state={};
+  try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){state={};}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+  var boxes=document.querySelectorAll('input.done');
+  function update(){var n=0;for(var i=0;i<boxes.length;i++){if(boxes[i].checked)n++;}
+    var el=document.getElementById('progress');if(el)el.textContent=n+' / '+boxes.length+' done';}
+  for(var i=0;i<boxes.length;i++){(function(cb){cb.checked=!!state[cb.getAttribute('data-id')];
+    cb.addEventListener('change',function(){state[cb.getAttribute('data-id')]=cb.checked;save();update();});})(boxes[i]);}
+  update();
+  if(!boxes.length){var hide=['progress','showall','hideall'];for(var k=0;k<hide.length;k++){var e=document.getElementById(hide[k]);if(e)e.style.display='none';}}
+  var sa=document.getElementById('showall'),ha=document.getElementById('hideall');
+  if(sa)sa.onclick=function(){var d=document.querySelectorAll('details.sol');for(var i=0;i<d.length;i++)d[i].open=true;};
+  if(ha)ha.onclick=function(){var d=document.querySelectorAll('details');for(var i=0;i<d.length;i++)d[i].open=false;};
+})();
+</script>
+</body></html>

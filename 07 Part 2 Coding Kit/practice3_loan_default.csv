@@ -1,0 +1,407 @@
+Annual Income,Loan Amount,Interest Rate,Term,Age,Employment Length,Credit Score,Debt-to-Income,Home Ownership,Purpose,Default
+"$25,333","$7,831",11.8%,36 months,42,< 1 year,614,24.2%,RENT,car,1
+"$60,634","$28,083",8.5%,36 months,44,< 1 year,693,10.0%,RENT,debt_consolidation,0
+,"$21,005",9.4%,36 months,40,3 years,716,13.1%,MORTGAGE,credit_card,0
+"$92,555","$35,352",12.8%,36 months,48,5 years,752,7.2%,MORTGAGE,debt_consolidation,0
+47689,22440,15.1%,36 months,47,< 1 year,649,30.3%,RENT,car,0
+"$78,816","$18,955",18.8%,36 months,29,< 1 year,N/A,21.5%,MORTGAGE,car,0
+"$65,043",32123,13.3%,36 months,52,5 years,799,23.5%,RENT,car,0
+"$33,212",14852,11.2%,36 months,39,1 year,706,19.3%,RENT,small_business,0
+"$30,692","$1,902",6.7%,36 months,50,< 1 year,713,25.1%,OWN,small_business,0
+"$69,379",22764,9.3%,60 months,65,10+ years,623,19.8%,OWN,car,0
+30076,"$7,540",6.2%,60 months,25,8 years,636,16.0%,RENT,car,0
+"$60,166","$3,045",14.0%,36 months,34,1 year,720,4.6%,MORTGAGE,debt_consolidation,0
+75009,18306,9.0%,60 months,51,2 years,721,7.6%,MORTGAGE,home_improvement,0
+"$99,564","$21,633",5.0%,36 months,61,10+ years,715,21.5%,MORTGAGE,home_improvement,0
+"$38,385","$2,361",6.6%,36 months,43,2 years,641,7.6%,MORTGAGE,car,0
+"$42,382","$14,308",9.0%,36 months,61,2 years,770,15.2%,RENT,credit_card,0
+,2103,6.2%,36 months,33,8 years,734,14.9%,MORTGAGE,debt_consolidation,0
+"$19,670","$3,989",7.9,36 months,29,5 years,774,27.5%,RENT,home_improvement,0
+,"$27,444",9.1,36 months,41,?,800,14.1%,MORTGAGE,home_improvement,0
+"$21,661",4179,8.2%,36 months,40,3 years,646,14.2%,RENT,credit_card,0
+"$61,254",19995,8.7,60 months,63,< 1 year,50,19.9%,RENT,car,0
+"$60,185","$3,769",12.5,36 months,34,< 1 year,692,3.5%,MORTGAGE,car,0
+"$44,537",21787,12.1%,36 months,39,2 years,686,24.7%,RENT,car,0
+19987,5864,7.5%,36 months,68,3 years,577,18.6%,MORTGAGE,credit_card,0
+"$54,752","$14,813",9.5%,60 months,34,5 years,707,7.0%,RENT,home_improvement,0
+"$40,813","$13,083",12.2%,36 months,59,5 years,622,28.1%,MORTGAGE,small_business,1
+"$62,952","$29,721",5.0%,36 months,28,1 year,717,19.4%,MORTGAGE,home_improvement,0
+27680,"$5,323",7.7%,60 months,29,1 year,621,23.5%,MORTGAGE,home_improvement,0
+"$48,068",19760,11.5,36 months,25,2 years,790,22.5%,RENT,car,0
+"$17,689","$5,838",9.6%,36 months,43,10+ years,668,10.7%,RENT,home_improvement,0
+"$30,864","$3,485",11.0%,36 months,27,2 years,712,15.1%,RENT,credit_card,0
+,11838,8.3,36 months,47,1 year,696,18.9%,RENT,car,0
+"$108,175","$20,733",10.4,36 months,33,tbd,674,14.9%,MORTGAGE,home_improvement,0
+26481,"$8,397",7.7,36 months,42,3 years,616,1.0%,RENT,home_improvement,0
+"$94,786","$6,400",15.5%,36 months,35,3 years,700,25.8%,MORTGAGE,home_improvement,0
+"$32,486",13105,11.2,60 months,45,3 years,720,24.6%,MORTGAGE,small_business,0
+41506,"$10,777",15.2%,36 months,42,5 years,643,5.8%,MORTGAGE,debt_consolidation,0
+88203,"$22,090",18.1%,60 months,53,8 years,772,9.1%,RENT,debt_consolidation,0
+"$102,172","$39,615",13.5%,36 months,54,,786,18.9%,RENT,small_business,0
+"$56,816","$26,382",8.7,36 months,34,3 years,720,22.3%,RENT,debt_consolidation,0
+,17426,16.2%,60 months,58,2 years,670,10.3%,RENT,home_improvement,0
+N/A,1895,10.7,36 months,42,1 year,671,17.6%,RENT,credit_card,0
+"$33,834","$16,725",10.7%,60 months,63,< 1 year,671,20.6%,RENT,car,1
+"$58,768","$22,043",13.2%,36 months,59,3 years,673,3.5%,OWN,credit_card,0
+"$62,911","$26,219",9.1,60 months,56,5 years,621,20.4%,MORTGAGE,credit_card,1
+"$36,876","$11,069",15.1%,60 months,67,3 years,603,8.5%,RENT,small_business,1
+"$49,369","$6,544",5.8%,36 months,53,< 1 year,699,20.9%,MORTGAGE,car,0
+"$31,795","$2,977",20.9,36 months,52,8 years,701,23.7%,MORTGAGE,car,1
+"$25,709","$3,655",13.1%,60 months,35,none,710,1.6%,MORTGAGE,debt_consolidation,0
+55053,27370,20.3%,36 months,27,10+ years,667,11.2%,RENT,credit_card,0
+"$43,486","$16,650",12.8,60 months,47,2 years,627,24.1%,MORTGAGE,small_business,1
+"$35,201","$3,310",6.2,60 months,42,< 1 year,717,26.6%,MORTGAGE,car,0
+"$108,439","$13,418",10.7%,60 months,24,3 years,688,23.7%,RENT,small_business,0
+"$24,608","$7,453",7.3%,36 months,44,< 1 year,699,26.3%,MORTGAGE,small_business,0
+"$125,170","$33,302",8.3%,36 months,43,1 year,699,15.8%,RENT,car,0
+"$31,457",11597,21.3%,36 months,47,10+ years,694,16.7%,RENT,debt_consolidation,1
+"$85,286","$20,701",9.8%,36 months,45,8 years,634,15.2%,RENT,debt_consolidation,0
+44422,"$14,915",17.5%,60 months,25,3 years,628,24.6%,MORTGAGE,debt_consolidation,0
+89721,"$13,034",19.3,60 months,37,10+ years,744,29.0%,RENT,debt_consolidation,0
+"$34,670","$15,769",6.6%,36 months,47,10+ years,703,32.4%,MORTGAGE,home_improvement,0
+105146,"$46,821",9.0%,60 months,43,3 years,712,6.6%,RENT,home_improvement,0
+"$168,871","$32,512",8.1%,36 months,63,5 years,602,31.2%,RENT,credit_card,0
+58092,28559,6.8%,36 months,29,2 years,706,31.1%,RENT,credit_card,0
+"$61,355",19096,12.1%,60 months,68,10+ years,618,13.2%,RENT,credit_card,0
+"$31,854","$15,712",8.9%,36 months,45,10+ years,597,N/A,MORTGAGE,debt_consolidation,0
+15685,"$1,331",12.5,36 months,38,1 year,675,5.4%,OWN,debt_consolidation,0
+"$53,519","$14,486",13.3%,36 months,25,10+ years,639,0.0%,RENT,debt_consolidation,0
+39934,"$6,695",9.0,36 months,51,10+ years,641,25.0%,MORTGAGE,small_business,0
+20380,8291,6.7%,36 months,33,10+ years,807,21.1%,OWN,car,0
+"$29,682","$11,763",18.4%,36 months,67,1 year,557,25.2%,mortgage,car,1
+"$31,361",11976,13.2%,36 months,67,1 year,732,26.0%,MORTGAGE,car,0
+39372,14096,13.9%,36 months,27,2 years,649,18.0%,RENT,small_business,1
+"$15,865","$5,595",11.2%,60 months,53,5 years,741,17.1%,RENT,debt_consolidation,0
+"$105,548",10170,10.5,60 months,65,2 years,715,14.9%,MORTGAGE,car,0
+45410,"$15,678",14.3%,36 months,68,5 years,659,13.4%,OWN,car,0
+"$44,650",14393,16.6,36 months,34,5 years,850,--,OWN,car,0
+"$32,684","$7,712",8.9%,36 months,28,8 years,618,,MORTGAGE,credit_card,1
+"$59,950","$17,645",7.5%,36 months,54,2 years,727,0.0%,Mortgage,small_business,0
+"$54,259","$20,924",9.9%,36 months,27,2 years,783,18.4%,RENT,car,0
+"$33,499","$11,262",9.6%,36 months,65,10+ years,763,20.0%,RENT,car,0
+"$37,403","$2,622",14.7%,60 months,47,5 years,650,25.3%,RENT,debt_consolidation,1
+"$46,246",16885,13.4,60 months,60,< 1 year,666,22.7%,RENT,car,0
+"$130,211","$15,180",6.7%,36 months,37,10+ years,698,--,OWN,debt_consolidation,0
+"$90,352","$4,551",15.0%,60 months,51,2 years,647,25.2%,MORTGAGE,debt_consolidation,1
+33353,"$14,067",12.9%,60 months,30,< 1 year,590,33.0%,mortgage,credit_card,1
+"$35,553","$6,239",17.9%,36 months,58,10+ years,822,14.3%,RENT,small_business,0
+"$48,046",11818,11.6,60 months,41,2 years,647,24.6%,RENT,small_business,0
+"$108,739","$16,412",10.0%,36 months,53,2 years,650,13.1%,MORTGAGE,credit_card,0
+58600,"$5,608",14.6%,36 months,27,2 years,588,13.2%,RENT,credit_card,0
+"$30,762","$1,992",11.8%,60 months,39,5 years,602,27.4%,OWN,home_improvement,1
+27720,9551,11.4%,36 months,26,< 1 year,676,3.9%,RENT,small_business,0
+"$73,587","$32,110",14.8%,36 months,59,10+ years,641,11.2%,MORTGAGE,small_business,0
+"$43,787",6911,13.5,36 months,35,< 1 year,750,18.7%,MORTGAGE,home_improvement,0
+"$29,380","$11,712",18.1%,36 months,40,8 years,681,29.5%,RENT,car,1
+"$51,474","$9,430",9.0,60 months,69,10+ years,N/A,16.7%,rent,small_business,0
+"$40,899","$19,569",11.0%,60 months,55,8 years,656,19.7%,RENT,car,1
+"$57,484",17615,5.0,60 months,48,5 years,687,11.9%,RENT,home_improvement,0
+"$67,764",25596,9.5%,36 months,64,2 years,738,11.8%,RENT,credit_card,0
+,29077,15.4,36 months,30,< 1 year,731,33.6%,MORTGAGE,home_improvement,0
+"$42,719","$11,999",11.2%,36 months,34,10+ years,821,15.3%,RENT,car,0
+48393,8047,12.0%,36 months,49,5 years,667,23.6%,OWN,debt_consolidation,0
+"$100,990","$46,396",5.0%,60 months,65,2 years,635,32.4%,RENT,home_improvement,0
+19322,"$3,447",11.9%,36 months,32,3 years,720,21.9%,OWN,debt_consolidation,0
+"$58,358",17365,15.1%,36 months,27,3 years,753,20.4%,MORTGAGE,credit_card,0
+"$38,920","$13,939",13.1%,60 months,46,,758,15.9%,OWN,home_improvement,0
+"$24,636",2393,13.3,60 months,48,3 years,722,10.3%,RENT,small_business,0
+"$44,966","$2,637",5.0%,60 months,35,5 years,737,20.8%,RENT,debt_consolidation,0
+"$29,460","$2,250",13.7%,36 months,32,N/A,765,,OWN,small_business,0
+"$9,999,999","$4,180",11.6%,60 months,56,3 years,744,23.2%,OWN,credit_card,0
+"$207,427",52058,13.0,36 months,53,1 year,660,9.1%,RENT,home_improvement,0
+"$114,747",13007,8.5%,36 months,62,2 years,660,8.9%,MORTGAGE,debt_consolidation,0
+"$66,682","$29,931",11.6%,60 months,22,10+ years,769,22.6%,RENT,debt_consolidation,0
+30911,"$14,374",18.9%,36 months,45,1 year,682,23.4%,MORTGAGE,home_improvement,0
+"$62,115","$25,915",18.3%,36 months,34,< 1 year,,15.0%,MORTGAGE,debt_consolidation,0
+"$76,473",7025,14.5%,36 months,67,3 years,634,8.9%,OWN,credit_card,0
+"$88,681",21018,15.5%,60 months,60,3 years,700,3.1%,RENT,credit_card,0
+"$35,815","$14,434",10.5%,60 months,59,5 years,642,NA,MORTGAGE,car,0
+"$38,003","$8,817",9.3%,36 months,30,< 1 year,,9.8%,OWN,home_improvement,0
+57701,"$28,550",14.0,36 months,69,2 years,732,34.1%,RENT,credit_card,0
+"$96,652","$29,539",17.7%,36 months,28,3 years,629,29.3%,rent,home_improvement,1
+"$101,475","$43,518",13.9%,36 months,65,1 year,658,23.1%,RENT,debt_consolidation,0
+"$48,177","$11,923",11.5%,36 months,26,< 1 year,735,13.5%,RENT,car,0
+64206,29258,18.4%,36 months,45,8 years,631,16.1%,MORTGAGE,car,0
+37579,"$12,357",6.8%,36 months,69,1 year,752,15.0%,RENT,debt_consolidation,0
+"$19,135","$5,523",16.1,36 months,64,10+ years,669,16.1%,OWN,car,1
+"$55,665",9692,8.5%,36 months,31,2 years,646,11.9%,MORTGAGE,small_business,1
+32428,"$14,603",8.8%,60 months,22,8 years,750,13.8%,OWN,debt_consolidation,0
+none,3827,17.3,36 months,61,3 years,?,21.8%,MORTGAGE,small_business,0
+"$56,729","$22,759",9.9%,36 months,39,5 years,672,22.2%,RENT,home_improvement,0
+21048,"$8,029",11.2%,60 months,55,5 years,676,12.5%,OWN,credit_card,0
+74121,"$24,540",5.9%,36 months,56,10+ years,638,13.3%,MORTGAGE,home_improvement,0
+66037,"$26,471",13.2,36 months,30,< 1 year,690,16.2%,RENT,credit_card,0
+"$55,168",17940,5.0%,36 months,54,3 years,659,25.9%,MORTGAGE,small_business,0
+18934,"$8,994",13.1%,60 months,45,1 year,682,18.2%,RENT,car,0
+"$29,102","$9,617",7.4%,60 months,66,8 years,680,11.6%,RENT,debt_consolidation,0
+"$21,941","$10,563",13.0%,36 months,49,2 years,754,26.4%,RENT,credit_card,0
+73718,"$23,726",14.6%,36 months,67,3 years,633,28.4%,OWN,debt_consolidation,0
+102683,13981,11.8%,60 months,47,5 years,687,27.3%,MORTGAGE,small_business,0
+"$86,701","$31,515",5.5%,60 months,64,8 years,679,16.8%,MORTGAGE,small_business,0
+"$34,677","$12,066",14.4,60 months,38,3 years,699,7.9%,RENT,car,0
+"$63,567","$27,808",22.5%,36 months,39,8 years,760,9.5%,MORTGAGE,car,0
+"$46,595",21386,18.3%,36 months,48,NA,696,15.0%,MORTGAGE,car,0
+"$73,343",26736,23.0%,36 months,52,< 1 year,745,19.5%,RENT,car,0
+"$56,104","$12,647",15.6%,36 months,68,2 years,833,3.7%,MORTGAGE,home_improvement,0
+"$55,627","$19,129",16.2%,36 months,38,1 year,626,37.1%,RENT,small_business,1
+"$46,860","$17,757",18.4%,36 months,66,10+ years,607,13.0%,MORTGAGE,home_improvement,0
+"$47,656",11247,20.3%,60 months,32,10+ years,682,8.3%,OWN,credit_card,0
+28579,"$14,043",18.2%,60 months,61,10+ years,769,11.8%,RENT,credit_card,0
+"$26,852","$4,830",5.4%,36 months,33,< 1 year,685,5.6%,MORTGAGE,home_improvement,0
+32666,"$11,873",17.2%,60 months,69,2 years,625,18.9%,RENT,small_business,1
+"$46,290","$18,802",20.0%,36 months,63,3 years,tbd,22.1%,OWN,debt_consolidation,0
+55543,"$14,533",20.8,60 months,57,3 years,701,19.4%,MORTGAGE,small_business,1
+"$90,502","$38,672",21.4%,60 months,49,5 years,tbd,16.0%,OWN,small_business,0
+"$38,093","$14,014",5.0,60 months,44,2 years,665,34.3%,OWN,home_improvement,0
+46265,"$16,957",5.2,36 months,59,10+ years,658,21.1%,MORTGAGE,small_business,0
+,"$1,881",10.7%,60 months,21,< 1 year,629,30.9%,RENT,credit_card,1
+"$83,508","$36,035",13.9%,36 months,60,< 1 year,663,14.1%,RENT,car,0
+"$49,029","$14,251",16.1%,36 months,150,5 years,698,9.6%,OWN,small_business,1
+"$62,897",15997,17.2%,60 months,21,5 years,647,17.7%,RENT,car,1
+"$31,067","$3,753",15.4%,60 months,47,10+ years,,18.0%,RENT,credit_card,1
+63866,"$21,286",8.6%,36 months,56,8 years,686,,OWN,credit_card,0
+"$44,198",16285,8.7%,36 months,33,5 years,721,19.8%,RENT,credit_card,0
+"$32,048","$11,988",5.0%,60 months,58,< 1 year,676,20.2%,rent,small_business,0
+"$38,962","$3,465",13.5%,36 months,33,1 year,729,5.1%,MORTGAGE,small_business,0
+"$45,931","$20,761",12.3%,36 months,55,< 1 year,685,NA,RENT,credit_card,0
+"$78,830","$37,899",10.6%,36 months,25,< 1 year,691,26.4%,OWN,debt_consolidation,0
+"$50,665",13664,11.1,60 months,63,8 years,646,26.0%,Rent,credit_card,1
+58892,"$23,244",14.2%,36 months,51,2 years,590,17.3%,RENT,small_business,1
+"$29,273",13654,6.3%,36 months,55,10+ years,785,21.1%,RENT,small_business,0
+"$18,492",5214,5.0%,36 months,23,< 1 year,625,14.7%,RENT,debt_consolidation,0
+24547,"$6,858",14.5%,60 months,55,10+ years,645,5.5%,RENT,small_business,0
+"$62,125","$17,065",12.1%,36 months,62,NA,768,18.2%,MORTGAGE,small_business,0
+"$25,480","$2,512",11.9%,60 months,25,< 1 year,733,18.7%,MORTGAGE,home_improvement,0
+37694,"$4,684",18.0%,36 months,32,1 year,666,,RENT,home_improvement,0
+,14947,7.3%,36 months,42,3 years,802,32.5%,MORTGAGE,small_business,0
+"$40,790","$9,462",14.0%,36 months,55,5 years,694,19.8%,RENT,credit_card,0
+"$39,544","$3,325",21.8%,36 months,28,3 years,693,15.4%,RENT,credit_card,1
+"$61,410","$24,952",10.9%,60 months,59,8 years,?,22.4%,MORTGAGE,car,1
+64816,"$4,622",8.7,36 months,25,< 1 year,677,24.0%,MORTGAGE,home_improvement,0
+"$54,259","$20,924",9.9%,36 months,27,2 years,783,18.4%,RENT,car,0
+"$53,339","$19,319",5.0%,60 months,64,3 years,617,7.4%,MORTGAGE,small_business,0
+"$82,183",36522,16.5%,36 months,56,10+ years,669,15.1%,MORTGAGE,car,0
+"$62,665","$3,292",9.3%,36 months,35,< 1 year,724,14.0%,RENT,debt_consolidation,0
+,5068,17.9%,36 months,21,3 years,648,24.1%,RENT,home_improvement,0
+29914,"$8,915",9.1%,36 months,36,10+ years,687,20.1%,Own,credit_card,1
+"$38,551","$15,614",10.9%,36 months,69,5 years,747,21.7%,MORTGAGE,car,0
+58272,19887,13.2,36 months,21,8 years,679,,RENT,home_improvement,0
+"$40,369",10769,7.5,60 months,49,8 years,719,13.0%,RENT,credit_card,0
+"$36,904","$15,724",5.0%,36 months,34,8 years,703,7.5%,MORTGAGE,credit_card,0
+70368,"$25,830",12.1,36 months,28,2 years,727,31.4%,MORTGAGE,debt_consolidation,0
+none,"$11,136",17.1%,60 months,42,< 1 year,579,20.3%,OWN,debt_consolidation,1
+"$70,218","$32,081",8.7%,36 months,32,3 years,,31.2%,MORTGAGE,home_improvement,0
+"$89,238","$29,481",5.0%,60 months,29,10+ years,724,19.8%,OWN,car,0
+"$92,076","$10,688",10.7%,60 months,27,2 years,707,28.2%,RENT,credit_card,0
+"$28,192","$7,533",15.8,36 months,66,2 years,775,18.2%,RENT,debt_consolidation,0
+"$70,999",8029,11.1%,60 months,25,2 years,628,19.7%,RENT,car,1
+"$37,302","$10,657",9.6%,36 months,69,2 years,562,32.8%,OWN,car,1
+57041,"$27,445",17.0%,36 months,63,1 year,755,14.3%,MORTGAGE,home_improvement,0
+42930,5783,15.5,36 months,52,< 1 year,712,10.7%,Rent,small_business,0
+103090,"$27,533",13.1%,36 months,65,8 years,666,14.9%,RENT,credit_card,0
+"$67,539","$17,580",6.2%,60 months,27,1 year,712,19.4%,OWN,car,0
+45766,9171,15.5%,36 months,30,1 year,679,21.1%,OWN,small_business,0
+50525,"$8,284",5.0%,36 months,30,2 years,741,20.6%,MORTGAGE,credit_card,0
+"$52,387","$10,746",18.5%,36 months,24,2 years,703,6.3%,RENT,debt_consolidation,0
+"$31,578","$7,146",11.1%,36 months,32,10+ years,742,16.9%,RENT,debt_consolidation,0
+"$88,013",21704,12.2%,60 months,25,2 years,612,13.8%,OWN,car,1
+NA,21594,19.0%,36 months,39,8 years,681,16.6%,RENT,small_business,0
+"$50,891","$16,205",10.8,36 months,52,8 years,809,16.5%,RENT,small_business,0
+"$30,682","$4,472",11.8,36 months,39,< 1 year,667,10.1%,RENT,home_improvement,0
+82525,"$7,313",13.0%,36 months,57,1 year,777,20.5%,RENT,debt_consolidation,0
+"$89,259",5045,7.5%,36 months,29,?,665,7.8%,OWN,debt_consolidation,0
+"$38,726","$18,282",14.5,60 months,40,8 years,757,7.9%,MORTGAGE,credit_card,0
+"$25,641","$11,003",7.4,36 months,34,3 years,675,25.4%,RENT,home_improvement,1
+"$125,984","$8,974",15.4%,60 months,68,1 year,826,19.6%,MORTGAGE,debt_consolidation,0
+89179,"$29,124",13.9%,60 months,54,3 years,733,27.7%,RENT,credit_card,0
+"$74,483","$23,294",11.1%,60 months,58,< 1 year,,19.4%,MORTGAGE,home_improvement,0
+"$27,747","$5,853",18.8,36 months,51,,705,8.3%,OWN,credit_card,0
+"$22,701","$3,915",11.8%,36 months,29,< 1 year,627,5.8%,RENT,car,0
+"$103,318","$28,603",14.2%,60 months,35,< 1 year,593,22.0%,RENT,debt_consolidation,1
+28043,7139,11.5,36 months,22,3 years,724,25.3%,RENT,credit_card,0
+27135,"$3,356",8.0%,36 months,42,< 1 year,800,18.3%,RENT,small_business,0
+"$32,555","$2,594",15.0%,36 months,28,5 years,767,26.5%,RENT,home_improvement,0
+"$30,212",11856,9.4%,36 months,29,10+ years,,22.6%,MORTGAGE,car,0
+$0,"$18,268",18.8%,36 months,66,3 years,808,18.9%,RENT,car,0
+"$149,213","$30,584",12.2%,36 months,27,2 years,658,27.5%,MORTGAGE,credit_card,0
+55743,"$7,397",16.2%,36 months,35,8 years,N/A,11.2%,MORTGAGE,debt_consolidation,0
+37725,"$7,421",7.4,36 months,60,3 years,625,22.4%,MORTGAGE,home_improvement,0
+,"$23,181",9.0%,36 months,56,5 years,731,21.6%,MORTGAGE,small_business,0
+"$160,719","$48,090",16.1%,36 months,30,< 1 year,676,27.3%,RENT,home_improvement,0
+,"$18,116",16.7%,60 months,60,5 years,573,15.7%,OWN,home_improvement,1
+"$84,117",21406,12.1%,36 months,52,3 years,717,10.2%,Own,home_improvement,0
+"$31,284","$4,014",5.0%,36 months,27,3 years,674,16.2%,RENT,home_improvement,0
+"$87,498","$11,560",13.4%,36 months,46,5 years,765,19.8%,RENT,home_improvement,0
+"$42,828","$9,759",8.0%,36 months,54,5 years,661,13.2%,RENT,small_business,0
+"$134,397",64411,5.0,60 months,48,3 years,614,20.7%,RENT,small_business,0
+84730,"$10,212",7.7%,36 months,33,2 years,591,24.9%,RENT,debt_consolidation,0
+"$76,258",27171,13.0%,36 months,56,5 years,698,13.5%,RENT,small_business,0
+"$71,769","$16,844",13.6%,36 months,46,NA,717,24.6%,MORTGAGE,small_business,0
+"$35,940","$5,005",10.9%,36 months,40,5 years,753,17.6%,MORTGAGE,home_improvement,0
+"$31,779","$11,344",15.6%,36 months,43,5 years,629,13.2%,MORTGAGE,small_business,0
+34712,"$10,165",5.8,36 months,54,< 1 year,705,14.8%,OWN,small_business,0
+46256,"$10,562",14.4%,36 months,36,2 years,786,19.3%,MORTGAGE,credit_card,0
+"$84,951","$14,626",8.0%,36 months,41,1 year,752,28.9%,OWN,small_business,0
+"$65,710","$16,832",250%,36 months,35,10+ years,633,11.7%,RENT,debt_consolidation,0
+"$75,781","$19,742",8.7%,36 months,54,8 years,N/A,0.1%,MORTGAGE,home_improvement,0
+"$27,915","$12,400",11.3%,36 months,21,NA,527,17.4%,MORTGAGE,home_improvement,0
+"$85,286","$20,701",9.8%,36 months,45,8 years,634,15.2%,RENT,debt_consolidation,0
+57970,"$10,858",12.6%,36 months,32,10+ years,675,13.3%,MORTGAGE,home_improvement,0
+"$81,576","$14,754",7.7%,36 months,33,5 years,700,18.7%,MORTGAGE,credit_card,0
+"$42,832","$21,295",11.6%,36 months,35,< 1 year,566,17.8%,MORTGAGE,credit_card,0
+"$78,533","$21,080",6.6%,60 months,69,< 1 year,781,21.9%,OWN,small_business,0
+82063,"$9,576",14.2%,36 months,23,2 years,708,30.3%,MORTGAGE,debt_consolidation,0
+"$25,247",10245,16.2%,36 months,22,,652,17.9%,RENT,debt_consolidation,1
+"$33,353","$12,609",9.0%,36 months,61,10+ years,631,9.8%,MORTGAGE,credit_card,1
+"$53,150","$15,074",8.2%,60 months,22,< 1 year,691,35.2%,rent,credit_card,0
+"$30,569","$8,354",8.8%,60 months,39,< 1 year,663,17.9%,OWN,car,1
+"$58,358",17365,15.1%,36 months,27,3 years,753,20.4%,MORTGAGE,credit_card,0
+"$33,850","$8,464",5.0%,36 months,28,8 years,714,5.2%,OWN,small_business,0
+"$44,833","$12,215",15.2,36 months,63,2 years,660,8.1%,mortgage,debt_consolidation,1
+"$89,256",29001,5.0%,36 months,42,< 1 year,840,9.6%,RENT,debt_consolidation,0
+"$18,771","$6,529",17.5%,36 months,67,10+ years,576,14.5%,RENT,small_business,1
+76229,"$17,964",16.1%,60 months,65,1 year,672,30.0%,RENT,home_improvement,1
+31004,"$3,882",12.5%,36 months,65,< 1 year,638,5.6%,RENT,debt_consolidation,0
+"$54,041","$11,742",9.1%,36 months,66,1 year,631,6.2%,RENT,small_business,0
+56572,"$22,708",15.9,36 months,41,5 years,690,9.8%,MORTGAGE,debt_consolidation,0
+144509,57347,17.5,36 months,32,2 years,789,16.5%,RENT,credit_card,0
+"$52,029","$2,774",9.6%,36 months,56,2 years,716,27.8%,RENT,home_improvement,0
+"$39,610","$17,476",9.1%,36 months,27,< 1 year,712,16.0%,RENT,debt_consolidation,0
+"$147,166",12673,5.0%,36 months,35,< 1 year,702,5.9%,RENT,credit_card,0
+"$45,735","$10,009",14.0%,36 months,39,3 years,673,18.0%,MORTGAGE,credit_card,0
+"$69,598",7646,11.2%,60 months,44,3 years,562,7.1%,MORTGAGE,car,1
+46373,"$19,163",12.5%,36 months,66,2 years,670,14.5%,OWN,credit_card,0
+"$80,616","$38,007",17.8,36 months,65,8 years,660,2.6%,MORTGAGE,car,0
+"$50,843",4900,8.3%,36 months,61,3 years,696,18.3%,RENT,car,0
+33019,9562,11.2%,36 months,35,8 years,676,12.7%,MORTGAGE,debt_consolidation,0
+"$163,261","$76,007",5.0%,60 months,21,< 1 year,675,21.5%,rent,credit_card,0
+"$32,490","$6,333",9.6%,36 months,38,1 year,717,18.6%,MORTGAGE,small_business,0
+83844,38281,12.8%,36 months,57,3 years,697,17.5%,RENT,car,0
+47728,23394,12.2,36 months,47,< 1 year,613,2.9%,own,home_improvement,0
+"$158,191","$13,326",14.1,36 months,26,10+ years,710,15.2%,OWN,debt_consolidation,0
+128583,"$48,391",15.4%,36 months,24,< 1 year,749,16.7%,OWN,credit_card,0
+"$66,034","$16,907",15.1,36 months,25,3 years,626,9.1%,MORTGAGE,credit_card,1
+"$60,431","$11,170",13.9%,36 months,66,8 years,741,17.9%,RENT,small_business,0
+95447,"$38,035",18.0%,36 months,39,5 years,698,24.9%,RENT,home_improvement,0
+"$45,168","$14,864",13.1%,36 months,57,2 years,850,8.9%,RENT,car,0
+"$20,708","$4,011",18.0%,60 months,69,1 year,750,30.2%,RENT,small_business,1
+"$46,138","$18,105",12.4%,36 months,47,2 years,723,11.7%,MORTGAGE,car,0
+"$38,869","$19,383",11.3%,60 months,35,< 1 year,692,,RENT,home_improvement,0
+"$73,900","$9,245",16.1,36 months,55,1 year,721,19.7%,OWN,small_business,0
+"$34,402","$12,366",13.0%,36 months,49,1 year,646,13.7%,OWN,debt_consolidation,1
+,4977,6.6%,60 months,47,< 1 year,717,5.5%,RENT,car,0
+"$51,497","$14,484",9.1%,60 months,58,5 years,668,17.7%,RENT,car,0
+30899,"$10,161",5.3%,60 months,61,8 years,610,7.8%,RENT,credit_card,0
+"$74,111",27770,5.2,36 months,43,8 years,683,13.2%,RENT,small_business,0
+"$45,223","$7,956",12.0%,60 months,33,5 years,744,13.2%,RENT,home_improvement,0
+"$64,432","$15,837",13.9%,36 months,34,8 years,683,15.8%,OWN,small_business,0
+N/A,"$9,961",7.3%,36 months,65,8 years,709,41.3%,MORTGAGE,small_business,1
+67213,"$25,879",12.3%,60 months,31,10+ years,758,26.4%,OWN,home_improvement,0
+"$33,634","$11,469",16.8%,36 months,60,8 years,690,9.4%,OWN,debt_consolidation,0
+"$24,976","$6,550",9.6%,36 months,61,< 1 year,595,15.7%,RENT,credit_card,0
+66746,10401,15.8,36 months,44,< 1 year,597,14.9%,OWN,home_improvement,0
+35463,"$15,175",14.4%,36 months,39,10+ years,708,11.3%,RENT,home_improvement,0
+"$32,271","$15,306",8.6%,36 months,56,3 years,641,20.2%,MORTGAGE,credit_card,0
+58742,"$10,027",5.0%,60 months,68,3 years,731,21.5%,RENT,small_business,0
+49746,5661,10.6%,36 months,67,8 years,674,13.3%,MORTGAGE,car,0
+"$49,590","$22,800",17.8%,36 months,45,10+ years,698,13.6%,MORTGAGE,home_improvement,0
+240923,"$51,578",10.3%,36 months,54,5 years,710,17.8%,MORTGAGE,car,0
+"$50,370","$9,105",8.1%,60 months,55,2 years,NA,,RENT,credit_card,0
+"$29,066","$14,402",16.6%,36 months,57,< 1 year,665,12.4%,RENT,small_business,0
+70372,"$7,088",6.7%,60 months,30,3 years,736,,MORTGAGE,car,0
+27053,"$7,862",11.4,36 months,39,1 year,733,14.4%,RENT,car,0
+90211,"$31,144",5.0%,60 months,62,8 years,702,21.8%,OWN,car,0
+"$37,493","$18,708",12.7%,60 months,62,2 years,669,N/A,Rent,car,1
+"$48,395",16066,7.8%,60 months,36,3 years,N/A,28.9%,RENT,car,0
+"$49,868",23013,13.1%,36 months,59,1 year,657,20.8%,RENT,credit_card,0
+19978,"$2,078",12.7%,36 months,48,10+ years,654,18.3%,RENT,small_business,1
+"$18,427","$7,603",11.3,36 months,56,5 years,726,18.0%,MORTGAGE,car,0
+"$35,250","$5,587",11.2,36 months,32,3 years,741,14.8%,RENT,credit_card,0
+"$29,731","$9,892",16.2%,60 months,40,< 1 year,687,8.1%,MORTGAGE,home_improvement,0
+29604,1769,15.4%,60 months,67,2 years,732,15.6%,RENT,debt_consolidation,0
+"$54,755","$2,758",12.1,60 months,24,8 years,749,28.1%,RENT,small_business,0
+"$95,966","$36,395",9.2%,60 months,54,10+ years,666,16.9%,MORTGAGE,credit_card,0
+27622,"$2,754",11.8%,36 months,50,5 years,735,,MORTGAGE,credit_card,0
+"$13,050","$3,641",9.8,60 months,50,< 1 year,534,14.1%,MORTGAGE,credit_card,1
+"$22,358","$1,134",10.9%,36 months,37,1 year,642,8.0%,RENT,home_improvement,0
+"$87,807",8418,7.7%,36 months,37,2 years,796,11.9%,RENT,home_improvement,0
+"$56,290",10105,15.9,36 months,36,3 years,704,10.6%,RENT,debt_consolidation,0
+"$89,372","$5,217",11.3%,36 months,27,5 years,628,,MORTGAGE,car,0
+89179,"$29,124",13.9%,60 months,54,3 years,733,27.7%,RENT,credit_card,0
+"$99,878","$40,754",9.0,36 months,62,1 year,726,17.8%,RENT,credit_card,0
+"$48,130","$5,555",12.2%,36 months,51,1 year,811,26.3%,RENT,small_business,0
+"$112,371","$7,405",15.9%,36 months,63,5 years,628,23.0%,RENT,home_improvement,0
+"$32,074","$3,369",11.5,60 months,61,8 years,662,25.5%,RENT,home_improvement,1
+199110,63558,6.6%,36 months,57,< 1 year,689,29.5%,RENT,car,0
+"$27,170","$6,573",20.6%,36 months,33,3 years,799,23.8%,RENT,home_improvement,0
+"$29,785","$10,655",6.0%,36 months,64,5 years,717,24.9%,RENT,car,0
+50099,"$5,142",8.4%,36 months,29,1 year,685,22.5%,MORTGAGE,home_improvement,0
+"$29,456","$14,327",11.1,36 months,44,5 years,680,N/A,RENT,credit_card,0
+"$36,965","$5,087",5.5%,36 months,65,,712,19.7%,MORTGAGE,small_business,0
+"$37,517",2787,15.3%,60 months,64,5 years,692,17.9%,RENT,car,0
+"$42,182","$16,012",10.0%,36 months,32,3 years,647,9.2%,RENT,credit_card,0
+27016,1917,14.6%,60 months,33,3 years,680,14.3%,MORTGAGE,car,0
+35480,"$4,719",11.8%,60 months,69,10+ years,598,11.6%,RENT,credit_card,0
+"$55,182","$5,323",9.7%,36 months,23,1 year,1850,12.0%,OWN,home_improvement,0
+"$126,432",51097,12.5%,36 months,33,8 years,638,17.8%,RENT,small_business,0
+28637,"$2,879",6.0%,36 months,54,< 1 year,644,24.2%,MORTGAGE,home_improvement,0
+"$19,670","$3,989",7.9,36 months,29,5 years,774,27.5%,RENT,home_improvement,0
+"$65,236","$14,394",17.3%,36 months,49,5 years,713,16.0%,Mortgage,debt_consolidation,0
+"$18,126","$3,831",21.1%,60 months,57,1 year,591,23.1%,RENT,debt_consolidation,1
+"$41,102",13158,12.3%,36 months,59,< 1 year,689,31.4%,RENT,small_business,0
+"$40,957",4981,14.1%,36 months,68,,676,21.3%,mortgage,debt_consolidation,0
+"$26,415",4540,12.9%,36 months,58,2 years,557,31.1%,MORTGAGE,credit_card,1
+71901,"$9,058",13.2%,60 months,26,< 1 year,643,27.0%,RENT,small_business,1
+"$85,961","$5,990",16.4%,60 months,36,3 years,715,12.4%,MORTGAGE,home_improvement,0
+"$25,427","$10,585",8.5%,36 months,33,8 years,729,NA,MORTGAGE,home_improvement,1
+"$17,838","$7,395",11.7%,36 months,68,2 years,597,24.9%,MORTGAGE,debt_consolidation,1
+50142,"$5,594",11.6%,60 months,68,1 year,827,30.3%,MORTGAGE,home_improvement,0
+67871,"$18,504",14.2%,36 months,45,10+ years,685,18.8%,RENT,car,0
+"$29,777",9976,6.8%,36 months,65,10+ years,631,9.8%,MORTGAGE,debt_consolidation,0
+"$41,902",5355,11.1%,36 months,40,1 year,661,17.8%,RENT,debt_consolidation,0
+54278,"$4,710",11.9,36 months,49,3 years,633,24.3%,MORTGAGE,car,0
+,4947,12.6%,60 months,27,< 1 year,719,24.2%,RENT,debt_consolidation,0
+"$51,671","$14,078",14.3%,60 months,22,3 years,?,29.6%,RENT,home_improvement,0
+97121,"$24,190",16.8%,36 months,43,2 years,672,26.2%,MORTGAGE,small_business,1
+"$73,319",34860,10.0,36 months,42,2 years,803,18.7%,RENT,home_improvement,0
+"$44,187","$13,028",9.5%,36 months,61,< 1 year,669,28.8%,MORTGAGE,debt_consolidation,0
+"$49,102","$6,247",12.3%,36 months,25,3 years,648,17.0%,RENT,credit_card,1
+"$51,159","$8,547",17.4%,36 months,59,3 years,NA,12.5%,RENT,credit_card,1
+"$56,174","$21,534",14.9%,36 months,21,2 years,657,16.8%,MORTGAGE,home_improvement,1
+44831,"$14,315",20.4%,60 months,62,10+ years,710,0.0%,OWN,car,0
+"$39,549","$5,836",11.8%,60 months,68,10+ years,556,21.8%,RENT,home_improvement,0
+"$39,741","$12,225",15.6%,36 months,66,,674,20.1%,RENT,credit_card,0
+27929,"$5,407",14.1,60 months,23,5 years,707,24.7%,Rent,home_improvement,0
+"$64,488",15045,14.3%,60 months,59,1 year,663,9.3%,MORTGAGE,debt_consolidation,0
+"$85,358",17598,6.0%,36 months,39,8 years,624,13.8%,rent,home_improvement,0
+227013,"$53,008",13.7%,60 months,59,< 1 year,711,6.1%,RENT,debt_consolidation,0
+"$74,353",3798,18.1%,36 months,53,3 years,707,14.6%,OWN,credit_card,0
+39211,"$13,661",15.0%,60 months,45,< 1 year,802,29.7%,RENT,car,0
+"$44,537",21787,12.1%,36 months,39,2 years,686,24.7%,RENT,car,0
+"$53,621",23453,10.9%,36 months,57,1 year,666,18.5%,MORTGAGE,car,1
+"$53,110","$11,164",10.8,60 months,65,8 years,682,13.7%,MORTGAGE,debt_consolidation,0
+"$102,553","$20,891",10.3%,36 months,56,10+ years,684,28.8%,MORTGAGE,credit_card,0
+"$127,335","$50,024",10.4%,36 months,66,3 years,795,14.8%,RENT,small_business,0
+"$87,333","$11,186",15.6%,36 months,67,2 years,552,19.5%,MORTGAGE,car,1
+31963,"$3,833",6.6%,36 months,31,1 year,720,27.9%,MORTGAGE,debt_consolidation,0
+"$62,939","$18,402",11.7%,36 months,23,1 year,623,24.0%,MORTGAGE,debt_consolidation,1
+46362,"$12,909",8.6%,36 months,64,3 years,670,22.5%,RENT,debt_consolidation,0
+"$42,104","$15,431",9.7%,36 months,29,10+ years,768,2.5%,RENT,small_business,0
+39516,"$2,222",7.4%,60 months,45,1 year,628,8.3%,MORTGAGE,credit_card,0
+62066,"$4,856",12.0%,36 months,69,1 year,698,24.8%,MORTGAGE,credit_card,0
+"$48,863","$19,423",5.0%,36 months,33,,693,25.6%,MORTGAGE,small_business,0
+85572,"$42,050",8.8%,36 months,21,8 years,628,18.1%,Rent,car,0
+"$118,796","$11,670",11.0%,36 months,25,8 years,729,11.5%,RENT,debt_consolidation,0
+"$47,359","$3,620",11.2%,36 months,37,1 year,739,8.6%,RENT,home_improvement,0
+"$38,016","$6,961",11.5%,60 months,24,,756,18.6%,MORTGAGE,home_improvement,0
+32177,"$15,868",16.4%,36 months,3,2 years,616,10.2%,RENT,small_business,1
+"$44,180",15052,14.8,36 months,24,< 1 year,644,18.7%,RENT,home_improvement,1
+"$83,092","$33,302",15.1%,60 months,48,< 1 year,728,33.0%,MORTGAGE,home_improvement,1
+"$50,356","$20,214",12.2%,60 months,50,1 year,737,19.1%,MORTGAGE,car,0
+"$62,007","$17,527",8.7%,60 months,45,1 year,742,19.9%,RENT,small_business,0
+59537,29254,12.7%,36 months,46,1 year,674,10.0%,RENT,car,0
+"$74,514","$14,535",11.9,36 months,56,10+ years,639,17.7%,OWN,small_business,0
+"$99,883","$35,875",7.9%,36 months,68,5 years,631,16.7%,RENT,credit_card,0
+"$98,221","$15,900",11.0%,60 months,57,2 years,693,16.7%,MORTGAGE,debt_consolidation,0
+39663,"$12,825",10.6%,60 months,55,10+ years,569,13.5%,OWN,small_business,0
+"$31,556","$9,505",18.0,60 months,22,3 years,656,29.0%,RENT,car,1

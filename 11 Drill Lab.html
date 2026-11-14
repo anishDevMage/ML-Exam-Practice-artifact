@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"></head><body>
+<title>ML Exam Drill Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: a single exam-pad column. Graph-paper problem card, worksheet step rows, blue ink for work, orange pen for corrections (like the notebook). */
+:root{
+  --bg:#f4f6fa; --paper:#ffffff; --grid:#e6ebf4; --line:#d5dceb; --fg:#1b2333; --mut:#5b6476;
+  --ink:#2343b8; --ink-soft:#e7ecfb; --pen:#d96a12; --pen-soft:#fdeedd; --ok:#17855a; --ok-soft:#e2f4ea;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-num:"IBM Plex Mono",Consolas,"Cascadia Mono",monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f131b; --paper:#161b25; --grid:#1d2431; --line:#2a3242; --fg:#e7eaf1; --mut:#9aa3b5;
+  --ink:#8faeff; --ink-soft:#1f2a46; --pen:#ff9b4d; --pen-soft:#3a2614; --ok:#4fd19c; --ok-soft:#14321f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f131b; --paper:#161b25; --grid:#1d2431; --line:#2a3242; --fg:#e7eaf1; --mut:#9aa3b5;
+  --ink:#8faeff; --ink-soft:#1f2a46; --pen:#ff9b4d; --pen-soft:#3a2614; --ok:#4fd19c; --ok-soft:#14321f; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--f-body)}
+.wrap{max-width:860px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:18px}
+header{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:flex-end;justify-content:space-between}
+h1{font:700 clamp(26px,5vw,34px)/1.1 var(--f-display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.lede{margin:4px 0 0;color:var(--mut);max-width:60ch}
+.clock{font:600 26px var(--f-num);font-variant-numeric:tabular-nums;color:var(--ink)}
+.clock small{display:block;font:600 11px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--mut);text-align:right}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:600 14px var(--f-body);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--fg);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--pen);outline-offset:2px}
+.card{background-color:var(--paper);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:22px 22px;border:1px solid var(--line);border-radius:6px;padding:18px clamp(14px,3vw,24px);min-width:0}
+.kicker{font:600 12px var(--f-body);letter-spacing:.09em;text-transform:uppercase;color:var(--pen)}
+h2{font:600 22px/1.2 var(--f-display);margin:2px 0 10px;text-wrap:balance}
+.statement{background:var(--paper);padding:10px 12px;border-left:3px solid var(--ink);margin-bottom:6px;overflow-x:auto}
+.mat{display:inline-block;vertical-align:middle;border-left:2px solid var(--fg);border-right:2px solid var(--fg);border-radius:3px;padding:0 3px;margin:2px 4px}
+.mat table{border-collapse:collapse}.mat td{padding:0 6px;text-align:right;font:500 15px var(--f-num)}
+.num{font-family:var(--f-num);font-size:.95em}
+.group{margin-top:14px}
+.group h3{font:600 14px var(--f-body);color:var(--mut);margin:0 0 6px}
+.step{display:grid;grid-template-columns:minmax(0,1fr) 9.5rem 2rem 1.6rem;gap:8px;align-items:center;padding:5px 8px;border-radius:4px;background:var(--paper)}
+.step+.step{margin-top:4px}
+.step label{min-width:0}
+.step input{width:100%;font:500 16px var(--f-num);padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--fg)}
+.step.good input{border-color:var(--ok);background:var(--ok-soft)}
+.step.bad input{border-color:var(--pen);background:var(--pen-soft)}
+.step.shown input{border-color:var(--pen);color:var(--pen)}
+.qbtn{width:2rem;height:2rem;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:700 14px var(--f-body);cursor:pointer}
+.mark{font:700 18px var(--f-body);text-align:center}
+.good .mark{color:var(--ok)}.bad .mark,.shown .mark{color:var(--pen)}
+.hint{grid-column:1/-1;font-size:14.5px;color:var(--fg);background:var(--pen-soft);border-radius:4px;padding:6px 10px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.hint button{font:600 13px var(--f-body);border:1px solid var(--pen);color:var(--pen);background:transparent;border-radius:4px;padding:2px 8px;cursor:pointer}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
+.btn{font:600 15px var(--f-body);padding:8px 16px;border-radius:5px;border:1px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.pen{border-color:var(--pen);color:var(--pen)}
+.status{font-weight:600;color:var(--mut)}
+.status.done{color:var(--ok)}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:16px clamp(14px,3vw,22px);min-width:0}
+.panel h2{font-size:19px}
+.run{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.runclock{font:600 20px var(--f-num);color:var(--pen);font-variant-numeric:tabular-nums}
+.tablewrap{overflow-x:auto}
+table.stats{border-collapse:collapse;width:100%;font-size:15px}
+table.stats th,table.stats td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+table.stats th:first-child,table.stats td:first-child{text-align:left}
+table.stats th{font:600 12px var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.note{color:var(--mut);font-size:14.5px;margin:8px 0 0}
+textarea{width:100%;min-height:120px;font:13px var(--f-num);background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:8px}
+@media (max-width:560px){.step{grid-template-columns:minmax(0,1fr) 2rem 1.6rem}.step input{grid-column:1/2;grid-row:2}.step .qbtn{grid-row:1/3;grid-column:2}.step .mark{grid-row:1/3;grid-column:3}}
+@media (prefers-reduced-motion:no-preference){.step.good{transition:background .2s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>ML Exam Drill Lab</h1>
+      <p class="lede">Hand calculations, one step at a time. Fill in what you can, press Check (or Enter), and use <b>?</b> for the formula. Every problem is new, and the clock times you, like the exam will.</p>
+    </div>
+    <div class="clock" aria-live="off"><small>This problem</small><span id="clock">0:00</span></div>
+  </header>
+
+  <nav class="skills" id="skills" aria-label="Choose a skill"></nav>
+
+  <section class="card" aria-labelledby="ptitle">
+    <div class="kicker" id="pkicker">Skill</div>
+    <h2 id="ptitle">Problem</h2>
+    <div class="statement" id="statement"></div>
+    <div id="steps"></div>
+    <div class="actions">
+      <button class="btn primary" id="check" type="button">Check</button>
+      <button class="btn" id="next" type="button">New problem</button>
+      <span class="status" id="status" aria-live="polite"></span>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="runtitle">
+    <h2 id="runtitle">Test run</h2>
+    <div class="run">
+      <button class="btn pen" id="runbtn" type="button">Start a 10-minute mixed run</button>
+      <span class="runclock" id="runclock" hidden>10:00</span>
+    </div>
+    <p class="note">Problems come from every skill in random order, the way the exam mixes them. When the time is up you get a summary to paste to Claude.</p>
+    <div id="runsummary" hidden></div>
+  </section>
+
+  <section class="panel" aria-labelledby="stattitle">
+    <h2 id="stattitle">Your numbers so far</h2>
+    <div class="tablewrap"><table class="stats" id="stats"></table></div>
+    <div class="actions">
+      <button class="btn" id="copy" type="button">Copy results for Claude</button>
+      <button class="btn pen" id="reset" type="button">Reset numbers</button>
+      <span class="status" id="copystatus" aria-live="polite"></span>
+    </div>
+    <textarea id="copybox" hidden aria-label="Results text"></textarea>
+    <p class="note">"Right first try" counts each step you got right on your first check, before any reveal. Saved in this browser only.</p>
+  </section>
+</div>
+
+<script>
+(function(){
+const $ = s => document.querySelector(s);
+const ri = (a,b) => a + Math.floor(Math.random()*(b-a+1));
+const pick = a => a[Math.floor(Math.random()*a.length)];
+const sum = a => a.reduce((s,v)=>s+v,0);
+function fmt(v){ const r = Math.round(v*10000)/10000; return String(Object.is(r,-0)?0:r).replace('-', '−'); }
+const vec = a => '<span class="num">[' + a.map(fmt).join(', ') + ']</span>';
+const arr2 = M => '<span class="num">[' + M.map(r => '[' + r.map(fmt).join(', ') + ']').join(', ') + ']</span>';
+const mat = M => '<span class="mat"><table><tbody>' + M.map(r => '<tr>' + r.map(v => '<td>' + fmt(v) + '</td>').join('') + '</tr>').join('') + '</tbody></table></span>';
+const SUB = ['₀','₁','₂','₃','₄','₅'];
+const SUP = ['⁽⁰⁾','⁽¹⁾','⁽²⁾','⁽³⁾','⁽⁴⁾'];
+
+// ---------------------------------------------------------------- generators
+function distinctInts(n, lo, hi){ const out = new Set(); while (out.size < n) out.add(ri(lo, hi)); return [...out]; }
+function linStep(ridge){
+  // 3 rows, intercept + 2 features with different ranges, so every column looks different
+  let rows;
+  do { const f1 = distinctInts(3, -3, 9), f2 = distinctInts(3, 1, 12); rows = f1.map((v,i) => [1, v, f2[i]]); }
+  while (new Set(rows.map(r => r[1] + ',' + r[2])).size < 3);
+  const ys = rows.map(() => ri(-5, 20));
+  const th = [pick([0,1,2,-1,0.5]), pick([0.5,1,2,-1,-0.5]), pick([-1,-0.5,0.5,1])];
+  const a = pick([0.01, 0.005, 0.02]), lam = pick([0.1, 0.5, 1]);
+  const p = rows.map(r => r[0]*th[0] + r[1]*th[1] + r[2]*th[2]);
+  const e = p.map((v,i) => v - ys[i]);
+  const g = [0,1,2].map(j => sum(rows.map((r,i) => r[j]*e[i])));
+  const pen = th.map(t => 2*lam*t);
+  const gt = ridge ? g.map((v,j) => v + pen[j]) : g;
+  const steps = [];
+  p.forEach((v,i) => steps.push({g: i === 0 ? '1 · Predict ŷ = Xθ' : null, label:`ŷ${SUP[i+1]}`, hint:`Row ${i+1} of X times θ: 1·θ₀ + ${fmt(rows[i][1])}·θ₁ + ${fmt(rows[i][2])}·θ₂`, ans:v}));
+  e.forEach((v,i) => steps.push({g: i === 0 ? '2 · Error e = ŷ − y' : null, label:`e${SUP[i+1]}`, hint:'Prediction minus target, keep the sign', ans:v}));
+  steps.push({g:'3 · Loss (just a score)', label:'J = ½Σe²' + (ridge ? ' + λΣθ²' : ''), hint: ridge ? '½(e⁽¹⁾² + e⁽²⁾² + e⁽³⁾²) + λ(θ₀² + θ₁² + θ₂²)' : '½(e⁽¹⁾² + e⁽²⁾² + e⁽³⁾²)', ans: 0.5*sum(e.map(v=>v*v)) + (ridge ? lam*sum(th.map(t=>t*t)) : 0)});
+  ['θ₀','θ₁','θ₂'].forEach((n,j) => steps.push({g: j === 0 ? '4 · Gradient: Xᵀe' + (ridge ? ' + 2λθ' : '') : null, label:`∂J/∂${n}`,
+    hint: (j === 0 ? 'Column 1 of X (all 1s) · e = e⁽¹⁾ + e⁽²⁾ + e⁽³⁾' : `Column ${j+1} of X · e`) + (ridge ? ` + 2·${fmt(lam)}·${n}` : ''), ans:gt[j]}));
+  ['θ₀','θ₁','θ₂'].forEach((n,j) => steps.push({g: j === 0 ? '5 · Update θ ← θ − α·gradient' : null, label:`new ${n}`, hint:`${n} − α·∂J/∂${n}`, ans:th[j] - a*gt[j]}));
+  return { title: ridge ? 'Ridge regression: one gradient step' : 'One batch gradient descent step',
+    statement:`X = ${mat(rows)} (column 1 = intercept, columns 2–3 = features x₁, x₂), y = ${vec(ys)}, θ = ${vec(th)}, α = <span class="num">${fmt(a)}</span>` +
+      (ridge ? `, λ = <span class="num">${fmt(lam)}</span>. Loss J = ½Σ(ŷ − y)² + λΣθ², so the gradient is Xᵀ(ŷ − y) + 2λθ (penalizing every θ, like the professor's Ridge class).`
+             : '. Use J = ½Σ(ŷ − y)² and the summed gradient Xᵀ(ŷ − y).'), steps };
+}
+function genGD(){ return linStep(false); }
+function genRidge(){ return linStep(true); }
+function genCF(){
+  const m = pick([3, 4]);
+  const xs = distinctInts(m, -3, 9).sort((a,b)=>a-b);
+  const ys = xs.map(() => ri(-4, 15));
+  const Sx = sum(xs), Sxx = sum(xs.map(v=>v*v)), Sy = sum(ys), Sxy = sum(xs.map((v,i)=>v*ys[i]));
+  const det = m*Sxx - Sx*Sx;
+  const ones = '[' + Array(m).fill(1).join(', ') + ']';
+  return { title:'Closed form (normal equation)',
+    statement:`x = ${vec(xs)}, y = ${vec(ys)} (m = ${m}). Add the intercept column, X = ${mat(xs.map(v=>[1,v]))}, and find θ = (XᵀX)⁻¹Xᵀy. Each entry of XᵀX is a column of X dotted with a column of X. (The column of 1s is always there: it is what lets the line have an intercept.)`,
+    steps:[
+      {g:'1 · XᵀX = [[a, b], [b, d]]', label:'a (top-left)', hint:`${ones}·${ones} = number of samples m`, ans:m},
+      {label:'b (off-diagonal)', hint:`${ones}·[x values] = Σx`, ans:Sx},
+      {label:'d (bottom-right)', hint:'[x values]·[x values] = Σx²', ans:Sxx},
+      {g:'2 · Xᵀy', label:'top', hint:`${ones}·y = Σy`, ans:Sy},
+      {label:'bottom', hint:'[x values]·y = Σxy', ans:Sxy},
+      {g:'3 · Invert and multiply', label:'det = ad − b²', hint:'a·d − b·b (no division anywhere before this)', ans:det},
+      {label:'θ₀ (intercept)', hint:'(1/det)·(d·Σy − b·Σxy): row 1 of [[d, −b], [−b, a]] times Xᵀy', ans:(Sxx*Sy - Sx*Sxy)/det},
+      {label:'θ₁ (slope)', hint:'(1/det)·(−b·Σy + a·Σxy): row 2 of [[d, −b], [−b, a]] times Xᵀy', ans:(m*Sxy - Sx*Sy)/det},
+    ]};
+}
+function genLR(){
+  // 3 samples, intercept + 2 features, mixed labels so both loss terms show up
+  let rows, ys, th, z;
+  do {
+    const f1 = distinctInts(3, -3, 4), f2 = distinctInts(3, -2, 5);
+    rows = f1.map((v,i) => [1, v, f2[i]]);
+    ys = [ri(0,1), ri(0,1), ri(0,1)];
+    th = [pick([-1,-0.5,0,0.5,1]), pick([-0.5,0.5,1,-1]), pick([-0.5,0.5,1,-1])];
+    z = rows.map(r => r[0]*th[0] + r[1]*th[1] + r[2]*th[2]);
+  } while (sum(ys) === 0 || sum(ys) === 3 || z.some(v => Math.abs(v) > 4 || Math.abs(v) < 0.25));
+  const h = z.map(v => 1/(1+Math.exp(-v)));
+  const loss = h.map((p,i) => ys[i] === 1 ? -Math.log(p) : -Math.log(1-p));
+  const correct = h.filter((p,i) => (p >= 0.5 ? 1 : 0) === ys[i]).length;
+  const d = h.map((p,i) => p - ys[i]);
+  const g = [0,1,2].map(j => sum(rows.map((r,i) => r[j]*d[i])));
+  const steps = [];
+  z.forEach((v,i) => steps.push({g: i === 0 ? '1 · Score z = Xθ (row · θ)' : null, label:`z${SUP[i+1]}`, hint:`1·θ₀ + ${fmt(rows[i][1])}·θ₁ + ${fmt(rows[i][2])}·θ₂`, ans:v}));
+  h.forEach((v,i) => steps.push({g: i === 0 ? '2 · Probability h = σ(z) = P(y = 1)' : null, label:`h${SUP[i+1]}`, hint:`1 / (1 + e^(−z${SUP[i+1]}))`, ans:v}));
+  steps.push({g:'3 · Classify (h ≥ 0.5 → 1)', label:'how many of the 3 are right?', hint:`Predicted classes: ${h.map(p => p >= 0.5 ? 1 : 0).join(', ')}; true labels: ${ys.join(', ')}`, ans:correct});
+  loss.forEach((v,i) => steps.push({g: i === 0 ? '4 · Cross-entropy per sample: only one term survives' : null, label:`loss${SUP[i+1]} (y = ${ys[i]})`,
+    hint: ys[i] === 1 ? `y = 1, so −ln h${SUP[i+1]}` : `y = 0, so −ln(1 − h${SUP[i+1]})`, ans:v}));
+  steps.push({label:'J = sum of the 3 losses', hint:'Add them up. A confident wrong answer dominates the total.', ans:sum(loss)});
+  ['θ₀','θ₁','θ₂'].forEach((n,j) => steps.push({g: j === 0 ? '5 · Gradient Xᵀ(h − y): column · (h − y)' : null, label:`∂J/∂${n}`,
+    hint: j === 0 ? 'Column of 1s · (h − y) = sum of (h − y)' : `Column ${j+1} of X · (h − y), summing down the 3 samples`, ans:g[j]}));
+  return { title:'Logistic regression: three samples',
+    statement:`X = ${mat(rows)} (column 1 = intercept, columns 2–3 = features x₁, x₂), y = ${vec(ys)}, θ = ${vec(th)}. J = −Σ[y·ln h + (1 − y)·ln(1 − h)], natural log.`,
+    steps };
+}
+function genGini(){
+  const g = a => { const n = a.length, p = sum(a)/n; return 1 - p*p - (1-p)*(1-p); };
+  for(;;){
+    const m = ri(5,6);
+    const X = Array.from({length:m}, () => [ri(-4,9), ri(-4,9)]);
+    const y = Array.from({length:m}, () => ri(0,1));
+    const n1 = sum(y); if (n1 < 2 || m - n1 < 2) continue;
+    const j = ri(0,1);
+    const vals = [...new Set(X.map(r => r[j]))].sort((a,b)=>a-b);
+    if (vals.length < 3) continue;
+    const t = vals[ri(1, vals.length-1)];
+    const L = [], R = [];
+    X.forEach((r,i) => (r[j] < t ? L : R).push(y[i]));
+    if (!L.length || !R.length) continue;
+    const gl = g(L), gr = g(R);
+    return { title:'Decision tree: Gini of a split',
+      statement:`Given X as ${arr2(X)} and y as ${vec(y)} (each inner list is one sample: [x₁, x₂]), consider the split <b>x${SUB[j+1]} &lt; ${fmt(t)}</b>. Samples with x${SUB[j+1]} &lt; ${fmt(t)} go left; a value equal to ${fmt(t)} goes right.`,
+      steps:[
+        {g:'1 · The node', label:'Gini of the node', hint:'1 − p₀² − p₁², with p = class count / ' + m, ans:g(y)},
+        {g:'2 · The children', label:'samples going left', hint:'Count the rows with x' + SUB[j+1] + ' strictly less than ' + fmt(t), ans:L.length},
+        {label:'Gini of the left child', hint:'1 − Σp², counting only the left samples', ans:gl},
+        {label:'Gini of the right child', hint:'1 − Σp², counting only the right samples', ans:gr},
+        {g:'3 · The split', label:'weighted Gini', hint:'(m_left/m)·I_left + (m_right/m)·I_right', ans:L.length/m*gl + R.length/m*gr},
+      ]};
+  }
+}
+function genKM(){
+  for(;;){
+    const P = Array.from({length:4}, () => [ri(0,8), ri(0,8)]);
+    const C = [[ri(0,8),ri(0,8)],[ri(0,8),ri(0,8)]];
+    if (C[0][0] === C[1][0] && C[0][1] === C[1][1]) continue;
+    const d = P.map(p => C.map(c => (p[0]-c[0])**2 + (p[1]-c[1])**2));
+    if (d.some(r => r[0] === r[1])) continue;
+    const lab = d.map(r => r[0] < r[1] ? 1 : 2);
+    if (!lab.includes(1) || !lab.includes(2)) continue;
+    const cen = [1,2].map(k => { const ps = P.filter((p,i) => lab[i] === k); return [sum(ps.map(p=>p[0]))/ps.length, sum(ps.map(p=>p[1]))/ps.length]; });
+    const steps = [];
+    P.forEach((p,i) => {
+      steps.push({g: i === 0 ? '1 · Squared distances' : null, label:`‖x${SUP[i+1]} − μ₁‖²`, hint:`(${fmt(p[0])} − ${fmt(C[0][0])})² + (${fmt(p[1])} − ${fmt(C[0][1])})²`, ans:d[i][0]});
+      steps.push({label:`‖x${SUP[i+1]} − μ₂‖²`, hint:'Same with μ₂', ans:d[i][1]});
+    });
+    P.forEach((p,i) => steps.push({g: i === 0 ? '2 · Assign (type 1 or 2)' : null, label:`cluster of x${SUP[i+1]}`, hint:'The center with the smaller squared distance', ans:lab[i], kind:'cluster'}));
+    steps.push({g:'3 · Update: mean of each cluster', label:'new μ₁, first coordinate', hint:'Average the first coordinates of the points in cluster 1', ans:cen[0][0]});
+    steps.push({label:'new μ₁, second coordinate', hint:'Average their second coordinates', ans:cen[0][1]});
+    steps.push({label:'new μ₂, first coordinate', hint:'Same for cluster 2', ans:cen[1][0]});
+    steps.push({label:'new μ₂, second coordinate', hint:'Same for cluster 2', ans:cen[1][1]});
+    return { title:'K-means: one iteration',
+      statement:`Points x⁽¹⁾ … x⁽⁴⁾ = ${arr2(P)}, k = 2, centers μ₁ = ${vec(C[0])} and μ₂ = ${vec(C[1])}. Do one assignment step and one update step.`, steps };
+  }
+}
+function genCNN(){
+  const B = pick([16,32,64,100,350]), C = pick([1,3,4]), H = pick([14,28,32,40,64]), K = pick([3,5]), S = pick([1,1,2]), P = pick([0,1,2]), O = pick([6,8,12,13,16,32]);
+  const out = Math.floor((H - K + 2*P)/S) + 1;
+  return { title:'CNN: output shape and parameters',
+    statement:`The input shape is <span class="num">(${B}, ${C}, ${H}, ${H})</span>. A convolution layer has kernel size ${K}, stride ${S}, padding ${P} and ${O} output channels.`,
+    steps:[
+      {g:'1 · Output shape (batch, channels, height, width)', label:'batch size', hint:'The batch never changes', ans:B},
+      {label:'channels', hint:'Set by out_channels', ans:O},
+      {label:'height = width', hint:'⌊(I − K + 2P)/S⌋ + 1', ans:out},
+      {g:'2 · Parameters', label:'trainable parameters', hint:'C_in·C_out·K·K + C_out (one bias per filter)', ans:C*O*K*K + O},
+    ]};
+}
+function genRNN(){
+  const x = pick([-2,-1,1,2]);
+  const h0 = [ri(-2,2),ri(-2,2),ri(-2,2)], Wx = [ri(-2,2),ri(-2,2),ri(-2,2)];
+  const Wh = Array.from({length:3}, () => [ri(-2,2),ri(-2,2),ri(-2,2)]), b = [ri(0,2),ri(0,2),ri(0,2)];
+  const xw = Wx.map(w => x*w), hw = [0,1,2].map(j => h0[0]*Wh[0][j] + h0[1]*Wh[1][j] + h0[2]*Wh[2][j]);
+  const h1 = [0,1,2].map(j => xw[j] + hw[j] + b[j]);
+  const steps = [];
+  [0,1,2].forEach(j => steps.push({g: j === 0 ? '1 · x₁·Wₓ' : null, label:`component ${j+1}`, hint:`x₁ × entry ${j+1} of Wₓ`, ans:xw[j]}));
+  [0,1,2].forEach(j => steps.push({g: j === 0 ? '2 · h₀·W_h (h₀ times each column)' : null, label:`component ${j+1}`, hint:`h₀ · column ${j+1} of W_h`, ans:hw[j]}));
+  [0,1,2].forEach(j => steps.push({g: j === 0 ? '3 · h₁ = sum of both + b' : null, label:`h₁, component ${j+1}`, hint:'Add the two components and b', ans:h1[j]}));
+  return { title:'RNN: one hidden-state step',
+    statement:`x₁ = [${fmt(x)}], h₀ = ${vec(h0)}, Wₓ = ${arr2([Wx])}, W_h = ${mat(Wh)}, b = ${vec(b)}. Compute h₁ = x₁·Wₓ + h₀·W_h + b (row form, as in the 2023 key), ignoring the activation.`, steps };
+}
+
+const SKILLS = [
+  {id:'gd', name:'Gradient descent', gen:genGD},
+  {id:'ridge', name:'Ridge step', gen:genRidge},
+  {id:'cf', name:'Closed form', gen:genCF},
+  {id:'lr', name:'Logistic regression', gen:genLR},
+  {id:'gini', name:'Gini split', gen:genGini},
+  {id:'km', name:'K-means', gen:genKM},
+  {id:'cnn', name:'CNN shapes', gen:genCNN},
+  {id:'rnn', name:'RNN step', gen:genRNN},
+];
+
+// ---------------------------------------------------------------- storage
+const KEY = 'drill-lab-stats-v1';
+let stats = {};
+try { stats = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch(e) { stats = {}; }
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(stats)); } catch(e) {} }
+
+// ---------------------------------------------------------------- state
+let current = SKILLS[0], prob = null, started = 0, run = null;
+
+function parse(s){
+  s = String(s).trim().replace(/−/g, '-').replace(/\s+/g, '');
+  if (!s) return null;
+  const f = s.match(/^([-+]?\d*\.?\d+)\/([-+]?\d*\.?\d+)$/);
+  if (f) return parseFloat(f[1]) / parseFloat(f[2]);
+  const v = Number(s);
+  return isFinite(v) ? v : NaN;
+}
+const close = (u, a) => Math.abs(u - a) <= Math.max(0.006, 0.001*Math.abs(a));
+
+function renderChips(){
+  const box = $('#skills'); box.innerHTML = '';
+  SKILLS.forEach(s => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'chip'; b.textContent = s.name; b.id = 'chip-' + s.id;
+    b.setAttribute('aria-pressed', String(s === current));
+    b.onclick = () => { if (run) return; current = s; renderChips(); newProblem(); };
+    box.appendChild(b);
+  });
+}
+
+function newProblem(){
+  if (run) current = pick(SKILLS);
+  const p = current.gen();
+  prob = { skill: current.id, ...p, first: p.steps.map(() => null), good: p.steps.map(() => false), shown: p.steps.map(() => false), done: false };
+  started = Date.now();
+  $('#pkicker').textContent = current.name + (run ? ' · test run' : '');
+  $('#ptitle').textContent = p.title;
+  $('#statement').innerHTML = p.statement;
+  const host = $('#steps'); host.innerHTML = '';
+  let group = null;
+  p.steps.forEach((s, i) => {
+    if (s.g) { group = document.createElement('div'); group.className = 'group'; group.innerHTML = '<h3>' + s.g + '</h3>'; host.appendChild(group); }
+    if (!group) { group = document.createElement('div'); group.className = 'group'; host.appendChild(group); }
+    const row = document.createElement('div');
+    row.className = 'step'; row.dataset.i = i;
+    row.innerHTML = `<label for="s-${i}">${s.label}</label><input id="s-${i}" inputmode="decimal" autocomplete="off" spellcheck="false"><button class="qbtn" type="button" aria-label="Show the formula for ${s.label}" aria-expanded="false">?</button><span class="mark" aria-hidden="true"></span><div class="hint" hidden><span>${s.hint}</span><button type="button">Show the number</button></div>`;
+    const q = row.querySelector('.qbtn'), h = row.querySelector('.hint');
+    q.onclick = () => { h.hidden = !h.hidden; q.setAttribute('aria-expanded', String(!h.hidden)); };
+    h.querySelector('button').onclick = () => reveal(i);
+    row.querySelector('input').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); check(); } });
+    group.appendChild(row);
+  });
+  $('#status').textContent = '0 of ' + p.steps.length + ' steps';
+  $('#status').className = 'status';
+  const first = host.querySelector('input'); if (first) first.focus({preventScroll:true});
+}
+
+function rowOf(i){ return document.querySelector('.step[data-i="' + i + '"]'); }
+
+function check(){
+  if (!prob || prob.done) return;
+  prob.steps.forEach((s, i) => {
+    if (prob.good[i] || prob.shown[i]) return;
+    const row = rowOf(i), inp = row.querySelector('input');
+    const raw = inp.value;
+    let ok;
+    if (s.kind === 'cluster') { const d = String(raw).replace(/[^0-9]/g, ''); if (!d) return; ok = Number(d.slice(-1)) === s.ans; }
+    else { const v = parse(raw); if (v === null) return; ok = !isNaN(v) && close(v, s.ans); }
+    if (prob.first[i] === null) prob.first[i] = ok;
+    row.classList.toggle('good', ok); row.classList.toggle('bad', !ok);
+    row.querySelector('.mark').textContent = ok ? '✓' : '✗';
+    if (ok) { prob.good[i] = true; inp.readOnly = true; }
+  });
+  update();
+}
+
+function reveal(i){
+  if (!prob || prob.good[i] || prob.shown[i]) return;
+  const s = prob.steps[i], row = rowOf(i), inp = row.querySelector('input');
+  prob.shown[i] = true; if (prob.first[i] === null) prob.first[i] = false;
+  inp.value = s.kind === 'cluster' ? String(s.ans) : fmt(s.ans).replace('−', '-');
+  inp.readOnly = true; row.classList.remove('bad', 'good'); row.classList.add('shown');
+  row.querySelector('.mark').textContent = '•';
+  update();
+}
+
+function update(){
+  const n = prob.steps.length, g = prob.good.filter(Boolean).length, sh = prob.shown.filter(Boolean).length;
+  if (g + sh === n && !prob.done) finish();
+  else $('#status').textContent = g + ' of ' + n + ' steps' + (sh ? ' · ' + sh + ' shown' : '');
+}
+
+function finish(){
+  prob.done = true;
+  const secs = Math.round((Date.now() - started)/1000);
+  const n = prob.steps.length, firstOk = prob.first.filter(v => v === true).length, sh = prob.shown.filter(Boolean).length;
+  const st = stats[prob.skill] || (stats[prob.skill] = {problems:0, steps:0, firstOk:0, shown:0, secs:0});
+  st.problems++; st.steps += n; st.firstOk += firstOk; st.shown += sh; st.secs += secs; save();
+  if (run) run.results.push({skill:prob.skill, steps:n, firstOk, shown:sh, secs});
+  $('#status').textContent = 'Done in ' + mmss(secs) + ' · ' + firstOk + ' of ' + n + ' right first try' + (sh ? ' · ' + sh + ' shown' : '') + '. Press New problem.';
+  $('#status').className = 'status done';
+  renderStats();
+  $('#next').focus({preventScroll:true});
+}
+
+const mmss = s => Math.floor(s/60) + ':' + String(s%60).padStart(2, '0');
+
+function renderStats(){
+  const rows = SKILLS.map(s => {
+    const st = stats[s.id];
+    if (!st || !st.problems) return `<tr><td>${s.name}</td><td>0</td><td>–</td><td>–</td><td>–</td></tr>`;
+    return `<tr><td>${s.name}</td><td>${st.problems}</td><td>${Math.round(100*st.firstOk/st.steps)}%</td><td>${st.shown}</td><td>${mmss(Math.round(st.secs/st.problems))}</td></tr>`;
+  }).join('');
+  $('#stats').innerHTML = '<thead><tr><th>Skill</th><th>Problems</th><th>Right first try</th><th>Steps shown</th><th>Avg time</th></tr></thead><tbody>' + rows + '</tbody>';
+}
+
+function summaryText(){
+  const lines = ['Drill Lab results (all time):'];
+  SKILLS.forEach(s => { const st = stats[s.id]; if (st && st.problems) lines.push(`- ${s.name}: ${st.problems} problems, ${Math.round(100*st.firstOk/st.steps)}% steps right first try, ${st.shown} steps shown, avg ${mmss(Math.round(st.secs/st.problems))}`); });
+  if (lastRun) lines.push('', lastRun);
+  return lines.join('\n');
+}
+let lastRun = '';
+
+function startRun(){
+  if (run) { endRun(); return; }
+  run = { end: Date.now() + 10*60*1000, results: [] };
+  $('#runbtn').textContent = 'Stop the run';
+  $('#runclock').hidden = false; $('#runsummary').hidden = true;
+  document.querySelectorAll('.chip').forEach(c => c.disabled = true);
+  newProblem();
+}
+function endRun(){
+  const r = run; run = null;
+  $('#runbtn').textContent = 'Start a 10-minute mixed run';
+  $('#runclock').hidden = true;
+  document.querySelectorAll('.chip').forEach(c => c.disabled = false);
+  const by = {};
+  r.results.forEach(x => { const b = by[x.skill] || (by[x.skill] = {n:0, steps:0, ok:0, secs:0}); b.n++; b.steps += x.steps; b.ok += x.firstOk; b.secs += x.secs; });
+  const done = r.results.length, steps = sum(r.results.map(x=>x.steps)), ok = sum(r.results.map(x=>x.firstOk));
+  const parts = SKILLS.filter(s => by[s.id]).map(s => `${s.name}: ${by[s.id].n} done, ${Math.round(100*by[s.id].ok/by[s.id].steps)}% first try, avg ${mmss(Math.round(by[s.id].secs/by[s.id].n))}`);
+  lastRun = `Last test run: ${done} problems finished, ${steps ? Math.round(100*ok/steps) : 0}% of steps right first try.` + (parts.length ? '\n' + parts.map(p => '- ' + p).join('\n') : '');
+  const box = $('#runsummary');
+  box.hidden = false;
+  box.innerHTML = '<p class="note" style="color:var(--fg)"><b>' + lastRun.split('\n')[0] + '</b></p>' + (parts.length ? '<ul>' + parts.map(p => '<li>' + p + '</li>').join('') + '</ul>' : '<p class="note">No problem was finished in this run.</p>');
+  current = SKILLS.find(s => s.id === (prob && prob.skill)) || SKILLS[0];
+  renderChips();
+}
+
+setInterval(() => {
+  if (prob && !prob.done) $('#clock').textContent = mmss(Math.round((Date.now() - started)/1000));
+  if (run) { const left = Math.max(0, Math.round((run.end - Date.now())/1000)); $('#runclock').textContent = mmss(left); if (!left) endRun(); }
+}, 1000);
+
+$('#check').onclick = check;
+$('#next').onclick = newProblem;
+$('#runbtn').onclick = startRun;
+$('#reset').onclick = () => {
+  const b = $('#reset');
+  if (b.dataset.armed) { stats = {}; save(); renderStats(); b.textContent = 'Reset numbers'; delete b.dataset.armed; $('#copystatus').textContent = 'Numbers cleared.'; }
+  else { b.dataset.armed = '1'; b.textContent = 'Click again to clear'; setTimeout(() => { b.textContent = 'Reset numbers'; delete b.dataset.armed; }, 4000); }
+};
+$('#copy').onclick = () => {
+  const text = summaryText();
+  const fallback = () => { const t = $('#copybox'); t.hidden = false; t.value = text; t.focus(); t.select(); $('#copystatus').textContent = 'Select and copy the text below.'; };
+  try { navigator.clipboard.writeText(text).then(() => { $('#copystatus').textContent = 'Copied. Paste it into the chat.'; }, fallback); } catch(e) { fallback(); }
+};
+
+window.__drill = { get prob(){ return prob; }, SKILLS };
+renderChips(); renderStats(); newProblem();
+})();
+</script>
+
+</body></html>
